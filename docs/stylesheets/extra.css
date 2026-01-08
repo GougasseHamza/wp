@@ -1,0 +1,108 @@
+/* Custom styles for CTF Writeups */
+
+/* Grid cards styling */
+.md-typeset .grid.cards > ol > li,
+.md-typeset .grid.cards > ul > li {
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .grid.cards > ol > li:hover,
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+/* Code block enhancements */
+.highlight code {
+  border-radius: 0.2rem;
+}
+
+/* Flag styling */
+code {
+  padding: 0.2em 0.4em;
+  border-radius: 0.2rem;
+  font-size: 0.85em;
+}
+
+/* Table styling improvements */
+.md-typeset table:not([class]) {
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 700;
+}
+
+/* Admonition improvements */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left: 0.2rem solid;
+}
+
+/* Better spacing for lists */
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: 0.5em;
+}
+
+/* Inline code in headers */
+.md-typeset h1 code,
+.md-typeset h2 code,
+.md-typeset h3 code {
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 0.9em;
+}
+
+/* Challenge card icons */
+.lg.middle {
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+/* Footer improvements */
+.md-footer-meta {
+  background-color: var(--md-footer-bg-color--dark);
+}
+
+/* Search highlighting */
+[data-md-color-scheme="slate"] .md-search-result mark {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Navigation active state */
+.md-nav__link--active {
+  font-weight: 700;
+}
+
+/* Better code copy button */
+.md-clipboard {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-clipboard:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Responsive improvements for mobile */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset .grid.cards {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better blockquote styling */
+.md-typeset blockquote {
+  border-left: 0.2rem solid var(--md-accent-fg-color);
+  padding-left: 1rem;
+}
