@@ -12,29 +12,31 @@
         <meta name="author" content="GougasseHamza">
       
       
-        <link rel="canonical" href="https://GougasseHamza.github.io/wp/about/">
+        <link rel="canonical" href="https://GougasseHamza.github.io/wp/hackday2026/matrix/">
       
       
-        <link rel="prev" href="../hackday2026/matrix/">
+        <link rel="prev" href="../crypto/">
       
+      
+        <link rel="next" href="../../about/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>About - CTF Writeups</title>
+        <title>Matrix Challenge — Steganography - CTF Writeups</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -82,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about" class="md-skip">
+        <a href="#matrix-challenge-steganography" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +100,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="CTF Writeups" class="md-header__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
+    <a href="../.." title="CTF Writeups" class="md-header__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Matrix Challenge — Steganography
             
           </span>
         </div>
@@ -230,7 +232,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -251,7 +253,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../asis-ctf/" class="md-tabs__link">
+        <a href="../../asis-ctf/" class="md-tabs__link">
           
   
   
@@ -267,11 +269,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../hackday2026/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -287,11 +291,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
         
   
   
@@ -332,7 +334,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="CTF Writeups" class="md-nav__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
+    <a href="../.." title="CTF Writeups" class="md-nav__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -362,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -443,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../asis-ctf/" class="md-nav__link">
+      <a href="../../asis-ctf/" class="md-nav__link">
         
   
   
@@ -471,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../asis-ctf/sanchess/" class="md-nav__link">
+      <a href="../../asis-ctf/sanchess/" class="md-nav__link">
         
   
   
@@ -499,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../asis-ctf/rick-gallery/" class="md-nav__link">
+      <a href="../../asis-ctf/rick-gallery/" class="md-nav__link">
         
   
   
@@ -527,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../asis-ctf/asis-mail/" class="md-nav__link">
+      <a href="../../asis-ctf/asis-mail/" class="md-nav__link">
         
   
   
@@ -555,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../asis-ctf/bookmarks/" class="md-nav__link">
+      <a href="../../asis-ctf/bookmarks/" class="md-nav__link">
         
   
   
@@ -587,28 +589,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -626,7 +631,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -644,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hackday2026/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -672,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hackday2026/crypto/" class="md-nav__link">
+      <a href="../crypto/" class="md-nav__link">
         
   
   
@@ -697,41 +702,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../hackday2026/matrix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Matrix Challenge — Steganography
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -751,7 +721,7 @@
   <span class="md-ellipsis">
     
   
-    About
+    Matrix Challenge — Steganography
   
 
     
@@ -769,7 +739,7 @@
   <span class="md-ellipsis">
     
   
-    About
+    Matrix Challenge — Steganography
   
 
     
@@ -795,10 +765,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-i-write-these" class="md-nav__link">
+  <a href="#challenge-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why I Write These
+        Challenge summary
       
     </span>
   </a>
@@ -806,10 +776,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-i-approach-security" class="md-nav__link">
+  <a href="#solution-outline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How I Approach Security
+        Solution outline
       
     </span>
   </a>
@@ -817,10 +787,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-writing-process" class="md-nav__link">
+  <a href="#key-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Writing Process
+        Key implementation
       
     </span>
   </a>
@@ -828,10 +798,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-youll-find-here" class="md-nav__link">
+  <a href="#result" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What You'll Find Here
+        Result
       
     </span>
   </a>
@@ -839,32 +809,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-site-itself" class="md-nav__link">
+  <a href="#lessons-learned" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Site Itself
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-in-touch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get in Touch
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#legal-disclaimer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Legal Disclaimer
+        Lessons learned
       
     </span>
   </a>
@@ -875,6 +823,41 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -906,10 +889,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-i-write-these" class="md-nav__link">
+  <a href="#challenge-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why I Write These
+        Challenge summary
       
     </span>
   </a>
@@ -917,10 +900,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-i-approach-security" class="md-nav__link">
+  <a href="#solution-outline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How I Approach Security
+        Solution outline
       
     </span>
   </a>
@@ -928,10 +911,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-writing-process" class="md-nav__link">
+  <a href="#key-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Writing Process
+        Key implementation
       
     </span>
   </a>
@@ -939,10 +922,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-youll-find-here" class="md-nav__link">
+  <a href="#result" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What You'll Find Here
+        Result
       
     </span>
   </a>
@@ -950,32 +933,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-site-itself" class="md-nav__link">
+  <a href="#lessons-learned" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Site Itself
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-in-touch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get in Touch
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#legal-disclaimer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Legal Disclaimer
+        Lessons learned
       
     </span>
   </a>
@@ -999,7 +960,7 @@
 
 
   
-    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/about.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/hackday2026/matrix.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -1008,35 +969,58 @@
     
       
     
-    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/about.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/hackday2026/matrix.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h1>
-<h2 id="why-i-write-these">Why I Write These<a class="headerlink" href="#why-i-write-these" title="Permanent link">&para;</a></h2>
-<p>I started documenting CTF challenges because I kept forgetting the techniques I'd learned. After solving a challenge, I'd move on to the next one, and a few weeks later, I'd face a similar problem and have to figure it out all over again. Writing forces me to really understand what I did and why it worked.</p>
-<p>But it's become more than just personal notes. I've learned so much from other people's writeups over the years - those moments when someone explains a technique in a way that just clicks. If my writeups can do that for someone else, then the time spent writing them is worth it.</p>
-<h2 id="how-i-approach-security">How I Approach Security<a class="headerlink" href="#how-i-approach-security" title="Permanent link">&para;</a></h2>
-<p>I'm interested in web application security, penetration testing, and vulnerability research. CTF competitions give me a safe, legal way to explore these topics without crossing ethical lines. There's something satisfying about that moment when you finally understand how a system can be broken - and more importantly, how it could have been built securely in the first place.</p>
-<h2 id="my-writing-process">My Writing Process<a class="headerlink" href="#my-writing-process" title="Permanent link">&para;</a></h2>
-<p>When I write a writeup, I try to capture my actual thought process. Not the clean, perfect solution I came up with after the fact, but the messy reality of trying things that don't work, getting stuck, and eventually finding the path forward.</p>
-<p>I include all the code that actually worked - tested and functional. If I spent three hours debugging an exploit, I'll mention the common pitfalls so you don't have to waste that time too. And I only publish writeups after the CTF ends, out of respect for other competitors.</p>
-<h2 id="what-youll-find-here">What You'll Find Here<a class="headerlink" href="#what-youll-find-here" title="Permanent link">&para;</a></h2>
-<p>Right now, the site focuses on web exploitation challenges. I've written about SSRF, XSS, CRLF injection, local file inclusion, path traversal, CSP bypasses, IDOR vulnerabilities, Python sandbox escapes, expression injection, and various filter evasion techniques.</p>
-<p>Each challenge taught me something specific, but the real learning comes from seeing patterns across multiple challenges. How the same vulnerability manifests in different contexts. How defensive techniques that work in one scenario fail in another.</p>
-<h2 id="the-site-itself">The Site Itself<a class="headerlink" href="#the-site-itself" title="Permanent link">&para;</a></h2>
-<p>I built this site with MkDocs Material because I wanted something that was easy to maintain and looked professional without requiring a lot of fiddling. If you want to add your own writeups or suggest improvements, check out the Contributing Guide on GitHub.</p>
-<h2 id="get-in-touch">Get in Touch<a class="headerlink" href="#get-in-touch" title="Permanent link">&para;</a></h2>
-<p>You can find me on GitHub at <a href="https://github.com/GougasseHamza">GougasseHamza</a>. If you spot mistakes in my writeups or have suggestions, please open an issue. I'm still learning, and corrections help me improve.</p>
-<h2 id="legal-disclaimer">Legal Disclaimer<a class="headerlink" href="#legal-disclaimer" title="Permanent link">&para;</a></h2>
-<p>Everything on this site is for educational purposes. The techniques I document are powerful and could cause real harm if misused. Only use them on systems you own or have explicit written permission to test.</p>
-<p>The challenges I write about are from CTF competitions - controlled environments specifically designed for security research. They exist so people like me can learn offensive security skills without breaking the law or hurting anyone.</p>
-<p>If you're learning from these writeups, please use that knowledge responsibly. The goal is to make systems more secure, not to break things for the sake of breaking them.</p>
-<hr />
-<p><em>Last updated: January 2026</em></p>
+<h1 id="matrix-challenge-steganography">Matrix Challenge — Steganography<a class="headerlink" href="#matrix-challenge-steganography" title="Permanent link">&para;</a></h1>
+<h2 id="challenge-summary">Challenge summary<a class="headerlink" href="#challenge-summary" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Image: The Matrix “bullet time” scene with a cyan waveform overlay and a SHA1 of <code>4bbab076a0aa488761cd216a82bf4e508a2953ab</code> to verify the file.</li>
+<li>Hints reference the “red pill,” “red signals,” LSBs, regrouping bits into bytes, and the Answer to the Ultimate Question (42).</li>
+<li>Key observation: focus on the red channel’s least significant bits, rebuild bytes, then XOR with <code>0x42</code> to undo the distortion.</li>
+</ul>
+<h2 id="solution-outline">Solution outline<a class="headerlink" href="#solution-outline" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Extract the red channel from the PNG and keep only the least significant bit of every pixel (LSB steganography).</li>
+<li>Flatten the LSB bitstream and group it into bytes (8 bits, MSB first) to reconstruct the hidden data.</li>
+<li>XOR every byte with <code>0x42</code> (the hexadecimal representation of “42” from Hitchhiker’s Guide) to remove the obfuscation.</li>
+<li>Search the result for <code>HACKDAY{...}</code> and print the flag.</li>
+</ol>
+<h2 id="key-implementation">Key implementation<a class="headerlink" href="#key-implementation" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Matrix_challenge.png&#39;</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">red</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img</span><span class="p">)[:,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">flat_lsb</span> <span class="o">=</span> <span class="p">(</span><span class="n">red</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">bytes_out</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">flat_lsb</span><span class="p">)</span> <span class="o">-</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">byte</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="k">for</span> <span class="n">bit</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="n">byte</span> <span class="o">=</span> <span class="p">(</span><span class="n">byte</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="n">flat_lsb</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">bit</span><span class="p">]</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">bytes_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">byte</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">decoded</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">b</span> <span class="o">^</span> <span class="mh">0x42</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">bytes_out</span><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">flag_start</span> <span class="o">=</span> <span class="n">decoded</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;HACKDAY{&#39;</span><span class="p">)</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">flag_end</span> <span class="o">=</span> <span class="n">decoded</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;}&#39;</span><span class="p">,</span> <span class="n">flag_start</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">decoded</span><span class="p">[</span><span class="n">flag_start</span><span class="p">:</span><span class="n">flag_end</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+</span></code></pre></div>
+<h2 id="result">Result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Flag: <code>HACKDAY{e3a12b9383038b0c6d755bcb39d3bf879cac3750588226ba1c52d64fde0a7c96}</code></li>
+</ul>
+<h2 id="lessons-learned">Lessons learned<a class="headerlink" href="#lessons-learned" title="Permanent link">&para;</a></h2>
+<ul>
+<li>LSB steganography is a common trick when hints mention “smallest units” or “signals” in an image.</li>
+<li>Pop culture references may indicate specific constants; here “42” maps to <code>0x42</code> for XOR deobfuscation.</li>
+<li>SHA1 hashes typically verify the supplied file, not the flag.</li>
+<li>The Matrix theme (red pill) reinforced looking at the red channel.</li>
+</ul>
 
 
 
@@ -1124,7 +1108,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../hackday2026/matrix/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Matrix Challenge — Steganography">
+          <a href="../crypto/" class="md-footer__link md-footer__link--prev" aria-label="Previous: As Small As Possible">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1134,11 +1118,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Matrix Challenge — Steganography
+                As Small As Possible
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                About
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1188,10 +1188,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
