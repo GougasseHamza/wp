@@ -117,6 +117,8 @@ nav:
     - Rick Gallery: asis-ctf/rick-gallery.md
     - ASIS Mail: asis-ctf/asis-mail.md
     - Bookmarks: asis-ctf/bookmarks.md
+  - HackDay 2026:
+    - Trust me I'm authenticated: hackday2026/index.md
   - About: about.md
 
 copyright: Copyright &copy; 2024-2026 GougasseHamza
