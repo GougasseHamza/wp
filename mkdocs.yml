@@ -119,6 +119,8 @@ nav:
     - Bookmarks: asis-ctf/bookmarks.md
   - HackDay 2026:
     - Trust me I'm authenticated: hackday2026/index.md
+    - As Small As Possible: hackday2026/crypto.md
+    - Matrix Challenge — Steganography: hackday2026/matrix.md
   - About: about.md
 
 copyright: Copyright &copy; 2024-2026 GougasseHamza
