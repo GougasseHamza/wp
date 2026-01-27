@@ -12,29 +12,27 @@
         <meta name="author" content="GougasseHamza">
       
       
-        <link rel="canonical" href="https://GougasseHamza.github.io/wp/">
+        <link rel="canonical" href="https://GougasseHamza.github.io/wp/uofctf/misc/">
       
       
-      
-        <link rel="next" href="asis-ctf/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>CTF Writeups</title>
+        <title>Writeup: UofTCTF Lottery Challenge - CTF Writeups</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -82,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ctf-writeups" class="md-skip">
+        <a href="#writeup-uoftctf-lottery-challenge" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="CTF Writeups" class="md-header__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
+    <a href="../.." title="CTF Writeups" class="md-header__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -118,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Writeup: UofTCTF Lottery Challenge
             
           </span>
         </div>
@@ -228,11 +226,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -253,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="asis-ctf/" class="md-tabs__link">
+        <a href="../../asis-ctf/" class="md-tabs__link">
           
   
   
@@ -271,7 +267,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="about/" class="md-tabs__link">
+      <a href="../../about/" class="md-tabs__link">
         
   
   
@@ -312,7 +308,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="CTF Writeups" class="md-nav__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
+    <a href="../.." title="CTF Writeups" class="md-nav__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -339,37 +335,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -385,76 +354,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recent-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recent Challenges
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Recent Challenges">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#asis-ctf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ASIS CTF
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hackday-2026" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HackDay 2026
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uoftctf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        UofTCTF
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -520,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/" class="md-nav__link">
+      <a href="../../asis-ctf/" class="md-nav__link">
         
   
   
@@ -548,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/sanchess/" class="md-nav__link">
+      <a href="../../asis-ctf/sanchess/" class="md-nav__link">
         
   
   
@@ -576,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/rick-gallery/" class="md-nav__link">
+      <a href="../../asis-ctf/rick-gallery/" class="md-nav__link">
         
   
   
@@ -604,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/asis-mail/" class="md-nav__link">
+      <a href="../../asis-ctf/asis-mail/" class="md-nav__link">
         
   
   
@@ -632,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/bookmarks/" class="md-nav__link">
+      <a href="../../asis-ctf/bookmarks/" class="md-nav__link">
         
   
   
@@ -667,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   
@@ -714,44 +613,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#recent-challenges" class="md-nav__link">
+  <a href="#1-initial-discovery" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recent Challenges
+        1. Initial Discovery
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recent Challenges">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-vulnerability-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Vulnerability Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Vulnerability Analysis">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#asis-ctf" class="md-nav__link">
+  <a href="#the-proof-of-concept-poc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ASIS CTF
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hackday-2026" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HackDay 2026
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uoftctf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        UofTCTF
+        The Proof of Concept (PoC)
       
     </span>
   </a>
@@ -760,6 +648,106 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-exfiltration-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Exfiltration Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Exfiltration Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-challenge-no-sleep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Challenge: No sleep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-solution-cpu-busy-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Solution: CPU Busy Loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-the-exploit-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. The Exploit Logic
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. The Exploit Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-payload-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Payload Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-optimization-threading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Optimization: Threading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-execution-and-final-flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Execution and Final Flag
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Key Takeaways
+      
+    </span>
+  </a>
   
 </li>
       
@@ -780,7 +768,7 @@
 
 
   
-    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/uofctf/misc.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -789,62 +777,71 @@
     
       
     
-    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/uofctf/misc.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="ctf-writeups">CTF Writeups<a class="headerlink" href="#ctf-writeups" title="Permanent link">&para;</a></h1>
-<p>Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT) and to share with everyone.</p>
-<h2 id="recent-challenges">Recent Challenges<a class="headerlink" href="#recent-challenges" title="Permanent link">&para;</a></h2>
-<h3 id="asis-ctf">ASIS CTF<a class="headerlink" href="#asis-ctf" title="Permanent link">&para;</a></h3>
-<p>I recently tackled four web exploitation challenges from ASIS CTF. Each one taught me something new about breaking (and hopefully, securing) web applications.</p>
-<div class="grid cards">
+<h1 id="writeup-uoftctf-lottery-challenge">Writeup: UofTCTF Lottery Challenge<a class="headerlink" href="#writeup-uoftctf-lottery-challenge" title="Permanent link">&para;</a></h1>
+<p><strong>Category:</strong> Pwn / Jail</p>
+<p><strong>Difficulty:</strong> Medium-Hard</p>
+<p><strong>Method:</strong> Blind Time-Based Command Injection via Bash Arithmetic Evaluation</p>
+<h2 id="1-initial-discovery">1. Initial Discovery<a class="headerlink" href="#1-initial-discovery" title="Permanent link">&para;</a></h2>
+<p>The challenge presents a "Lottery" service over a raw TCP connection. Upon connecting, the user must solve a <strong>Proof-of-Work (PoW)</strong> challenge from <code>pwn.red</code>. This is a rate-limiting mechanism to prevent automated spamming of the server.</p>
+<p>After solving the PoW, the server prompts:</p>
+<blockquote>
+<p>Guess the winning ticket (hex):</p>
+</blockquote>
+<h2 id="2-vulnerability-analysis">2. Vulnerability Analysis<a class="headerlink" href="#2-vulnerability-analysis" title="Permanent link">&para;</a></h2>
+<p>The input field is vulnerable to <strong>Bash Arithmetic Expansion</strong>. In many CTF challenges involving "calculators" or "hex guesses" written in Bash, user input is passed directly into an arithmetic context like <code>(( input ))</code> or <code>$(( input ))</code>.</p>
+<p>In Bash, arithmetic contexts are surprisingly powerful:</p>
 <ul>
-<li>
-<p><strong>Sanchess</strong></p>
-<hr />
-<p><a href="asis-ctf/sanchess/">Writeup</a></p>
-</li>
-<li>
-<p><strong>Rick Gallery</strong></p>
-<hr />
-<p><a href="asis-ctf/rick-gallery/">Writeup</a></p>
-</li>
-<li>
-<p><strong>ASIS Mail</strong></p>
-<hr />
-<p><a href="asis-ctf/asis-mail/">Writeup</a></p>
-</li>
-<li>
-<p><strong>Bookmarks</strong></p>
-<hr />
-<p><a href="asis-ctf/bookmarks/">Writeup</a></p>
-</li>
+<li><strong>Variable Assignment:</strong> You can manipulate environment variables (e.g., <code>PATH=0</code>).</li>
+<li><strong>Comma Operator:</strong> You can chain multiple expressions together.</li>
+<li><strong>Command Substitution:</strong> You can execute arbitrary shell commands using <code>$(...)</code>.</li>
 </ul>
-</div>
-<h3 id="hackday-2026">HackDay 2026<a class="headerlink" href="#hackday-2026" title="Permanent link">&para;</a></h3>
-<div class="grid cards">
+<h3 id="the-proof-of-concept-poc">The Proof of Concept (PoC)<a class="headerlink" href="#the-proof-of-concept-poc" title="Permanent link">&para;</a></h3>
+<p>By sending <code>0, PATH=0</code>, the server crashed with the following error:
+<code>/app/run: line 14: head: command not found</code></p>
+<p>This confirmed that:</p>
+<ol>
+<li>The backend is a Bash script.</li>
+<li>Our input is being evaluated, allowing us to overwrite variables.</li>
+<li>Standard Error (stderr) is visible, though Standard Output (stdout) is suppressed.</li>
+</ol>
+<h2 id="3-exfiltration-strategy">3. Exfiltration Strategy<a class="headerlink" href="#3-exfiltration-strategy" title="Permanent link">&para;</a></h2>
+<p>Attempts to read the flag directly via <code>cat /flag.txt</code> failed to produce output. Attempts to redirect output to the parent process's file descriptors (<code>&gt; /proc/$PPID/fd/1</code>) also failed, likely due to containerization restrictions.</p>
+<p>Because we could not see the output, we switched to a <strong>Blind Time-Based Attack</strong>.</p>
+<h3 id="the-challenge-no-sleep">The Challenge: No <code>sleep</code><a class="headerlink" href="#the-challenge-no-sleep" title="Permanent link">&para;</a></h3>
+<p>A typical timing attack relies on the <code>sleep</code> command. However, this environment was a minimal Docker container where <code>/bin/sleep</code> was not installed.</p>
+<h3 id="the-solution-cpu-busy-loop">The Solution: CPU Busy Loop<a class="headerlink" href="#the-solution-cpu-busy-loop" title="Permanent link">&para;</a></h3>
+<p>To create a detectable delay, we used a Bash-native <code>for</code> loop. If a condition (e.g., "Is the first character of the flag 'u'?" ) is true, the server executes a loop counting to 3,000,000, which consumes roughly 2 seconds of CPU time.</p>
+<h2 id="4-the-exploit-logic">4. The Exploit Logic<a class="headerlink" href="#4-the-exploit-logic" title="Permanent link">&para;</a></h2>
+<p>We used <strong>Binary Search</strong> to find each character of the flag efficiently. Instead of checking every ASCII character linearly (1 to 127), binary search allows us to find a character in approximately 7 requests.</p>
+<h3 id="the-payload-structure">The Payload Structure<a class="headerlink" href="#the-payload-structure" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="m">0</span>,<span class="w"> </span>a<span class="o">[</span><span class="k">$(if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="k">$(</span>head<span class="w"> </span>-c<span class="w"> </span><span class="o">{</span>index<span class="o">}</span><span class="w"> </span>/flag.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>od<span class="w"> </span>-An<span class="w"> </span>-t<span class="w"> </span>u1<span class="k">)</span><span class="w"> </span>-gt<span class="w"> </span><span class="o">{</span>mid<span class="o">}</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="o">((</span><span class="nv">i</span><span class="o">=</span><span class="m">0</span><span class="p">;</span>i&lt;<span class="m">3000000</span><span class="p">;</span>i++<span class="k">)</span><span class="o">)</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>:<span class="p">;</span><span class="w"> </span><span class="k">done</span><span class="p">;</span><span class="w"> </span><span class="k">fi</span><span class="o">)]</span>
+</span></code></pre></div>
 <ul>
-<li>
-<p><strong>Trust me I'm authenticated</strong></p>
-<hr />
-<p><a href="hackday2026/">Writeup</a></p>
-</li>
+<li><strong><code>head -c {index} /flag.txt | tail -c 1</code></strong>: Isolates the character at a specific position.</li>
+<li><strong><code>od -An -t u1</code></strong>: Converts that character to its decimal ASCII value (e.g., 'u' becomes <code>117</code>).</li>
+<li><strong><code>-gt {mid}</code></strong>: Compares the value for the binary search.</li>
+<li><strong><code>for...done</code></strong>: The "Busy Loop" that creates a detectable timing delay if the condition is met.</li>
 </ul>
-</div>
-<h3 id="uoftctf">UofTCTF<a class="headerlink" href="#uoftctf" title="Permanent link">&para;</a></h3>
-<div class="grid cards">
-<ul>
-<li>
-<p><strong>Misc</strong></p>
-<hr />
-<p><a href="uofctf/misc/">Writeup</a></p>
-</li>
-</ul>
-</div>
+<h2 id="5-optimization-threading">5. Optimization: Threading<a class="headerlink" href="#5-optimization-threading" title="Permanent link">&para;</a></h2>
+<p>Solving the PoW for every guess is the main bottleneck, taking ~10 seconds per request. A single-threaded solver would take hours to retrieve a 40-character flag.</p>
+<p>We implemented a <strong>Threaded Solver</strong> using Python’s <code>ThreadPoolExecutor</code>. By running 4 parallel workers, we were able to process 4 characters (or 4 binary search steps) simultaneously, drastically reducing the total time.</p>
+<h2 id="6-execution-and-final-flag">6. Execution and Final Flag<a class="headerlink" href="#6-execution-and-final-flag" title="Permanent link">&para;</a></h2>
+<p>The solver extracted the flag character by character. The final flag revealed a self-aware pun on the "Lottery" theme:</p>
+<p><strong>Final Flag:</strong>
+<code>uoftctf{you_won_the_LETtery_(hahahaha_get_it?)}</code></p>
+<h2 id="7-key-takeaways">7. Key Takeaways<a class="headerlink" href="#7-key-takeaways" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Arithmetic Contexts are Dangerous:</strong> Never pass user input into Bash arithmetic operators; they allow for powerful command substitution.</li>
+<li><strong>Timing is a Universal Side-Channel:</strong> Even when <code>stdout</code>, <code>stderr</code>, and the <code>sleep</code> command are unavailable, CPU-intensive loops can be used to leak data.</li>
+<li><strong>Local Performance Matters:</strong> In challenges with Proof-of-Work, your local CPU becomes the exfiltration bottleneck; always parallelize your solver when possible.</li>
+</ol>
 
 
 
@@ -928,28 +925,6 @@
         <footer class="md-footer">
   
     
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="asis-ctf/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Overview
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -996,10 +971,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

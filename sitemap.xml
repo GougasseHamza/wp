@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://GougasseHamza.github.io/wp/</loc>
-         <lastmod>2026-01-08</lastmod>
+         <lastmod>2026-01-27</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/about/</loc>
-         <lastmod>2026-01-08</lastmod>
+         <lastmod>2026-01-27</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/</loc>
-         <lastmod>2026-01-08</lastmod>
+         <lastmod>2026-01-27</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/asis-mail/</loc>
-         <lastmod>2026-01-08</lastmod>
+         <lastmod>2026-01-27</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/bookmarks/</loc>
-         <lastmod>2026-01-08</lastmod>
+         <lastmod>2026-01-27</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/rick-gallery/</loc>
-         <lastmod>2026-01-08</lastmod>
+         <lastmod>2026-01-27</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/sanchess/</loc>
-         <lastmod>2026-01-08</lastmod>
+         <lastmod>2026-01-27</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/hackday2026/</loc>
+         <lastmod>2026-01-27</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/uofctf/misc/</loc>
+         <lastmod>2026-01-27</lastmod>
     </url>
 </urlset>

