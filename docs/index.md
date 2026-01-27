@@ -38,3 +38,27 @@ I recently tackled four web exploitation challenges from ASIS CTF. Each one taug
 </div>
 
 
+### HackDay 2026
+
+<div class="grid cards" markdown>
+
+-   **Trust me I'm authenticated**
+
+    ---
+
+    [Writeup](hackday2026/index.md)
+
+</div>
+
+
+### UofTCTF
+
+<div class="grid cards" markdown>
+
+-   **Misc**
+
+    ---
+
+    [Writeup](uofctf/misc.md)
+
+</div>
