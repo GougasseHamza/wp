@@ -12,13 +12,13 @@
         <meta name="author" content="GougasseHamza">
       
       
-        <link rel="canonical" href="https://GougasseHamza.github.io/wp/hackday2026/crypto/">
+        <link rel="canonical" href="https://GougasseHamza.github.io/wp/bits/savemefromthishell-aes/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../too-genus-curve/">
       
       
-        <link rel="next" href="../matrix/">
+        <link rel="next" href="../../hackena/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>As Small As Possible - CTF Writeups</title>
+        <title>SaveMeFromThisHell — AES - CTF Writeups</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#as-small-as-possible-dh-aes-gcm" class="md-skip">
+        <a href="#savemefromthishell-aes-custom-writeup-solvers" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              As Small As Possible
+              SaveMeFromThisHell — AES
             
           </span>
         </div>
@@ -269,13 +269,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../hackday2026/" class="md-tabs__link">
           
   
   
@@ -311,11 +309,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../bits/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -709,31 +709,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -751,7 +748,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -769,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../hackday2026/" class="md-nav__link">
         
   
   
@@ -794,37 +791,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    As Small As Possible
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../hackday2026/crypto/" class="md-nav__link">
         
   
   
@@ -840,125 +810,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TL;DR
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-recon-what-the-service-does" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1) Recon: what the service does
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-key-derivation-discovery-using-the-1-trick" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2) Key derivation discovery (using the “1 trick”)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-real-vulnerability-no-subgroup-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3) The real vulnerability: no subgroup validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-how-to-get-an-element-of-order-q" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4) How to get an element of order q
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-recover-a-mod-q-using-alice-tag-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5) Recover a mod q using Alice + tag verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-reconstruct-alices-private-exponent-with-crt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6) Reconstruct Alice’s private exponent with CRT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-decrypt-the-intercepted-traffic-get-the-flag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7) Decrypt the intercepted traffic (get the flag)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-why-the-challenge-name-fits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8) Why the challenge name fits
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -971,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../matrix/" class="md-nav__link">
+      <a href="../../hackday2026/matrix/" class="md-nav__link">
         
   
   
@@ -1148,28 +999,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1187,7 +1041,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1205,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bits/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1233,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bits/too-genus-curve/" class="md-nav__link">
+      <a href="../too-genus-curve/" class="md-nav__link">
         
   
   
@@ -1258,10 +1112,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../bits/savemefromthishell-aes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SaveMeFromThisHell — AES
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1277,6 +1158,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-i-was-given" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What I Was Given
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Plan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solver-1-full-brute-force-key-recovery-flag-decryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solver 1 — Full brute-force key recovery + flag decryption
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1867,10 +1801,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
+  <a href="#what-i-was-given" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TL;DR
+        What I Was Given
       
     </span>
   </a>
@@ -1878,10 +1812,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-recon-what-the-service-does" class="md-nav__link">
+  <a href="#attack-plan" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1) Recon: what the service does
+        Attack Plan
       
     </span>
   </a>
@@ -1889,76 +1823,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-derivation-discovery-using-the-1-trick" class="md-nav__link">
+  <a href="#solver-1-full-brute-force-key-recovery-flag-decryption" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2) Key derivation discovery (using the “1 trick”)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-real-vulnerability-no-subgroup-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3) The real vulnerability: no subgroup validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-how-to-get-an-element-of-order-q" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4) How to get an element of order q
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-recover-a-mod-q-using-alice-tag-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5) Recover a mod q using Alice + tag verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-reconstruct-alices-private-exponent-with-crt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6) Reconstruct Alice’s private exponent with CRT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-decrypt-the-intercepted-traffic-get-the-flag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7) Decrypt the intercepted traffic (get the flag)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-why-the-challenge-name-fits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8) Why the challenge name fits
+        Solver 1 — Full brute-force key recovery + flag decryption
       
     </span>
   </a>
@@ -1982,7 +1850,7 @@
 
 
   
-    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/hackday2026/crypto.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/bits/savemefromthishell-aes.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -1991,62 +1859,125 @@
     
       
     
-    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/hackday2026/crypto.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/bits/savemefromthishell-aes.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="as-small-as-possible-dh-aes-gcm">As Small As Possible (DH + AES-GCM)<a class="headerlink" href="#as-small-as-possible-dh-aes-gcm" title="Permanent link">&para;</a></h1>
-<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
-<ul>
-<li>The server accepts <strong>arbitrary Diffie–Hellman public keys</strong> without subgroup checks, so I could force Alice’s shared secret into tiny factors of <code>p-1</code>.</li>
-<li>Recovering Alice’s exponent modulo each small prime and recombining with CRT let me derive the real shared secret and decrypt the intercepted AES-GCM traffic.</li>
-</ul>
-<h2 id="1-recon-what-the-service-does">1) Recon: what the service does<a class="headerlink" href="#1-recon-what-the-service-does" title="Permanent link">&para;</a></h2>
-<ul>
-<li>When I connected to the challenge I saw an intercepted AES-GCM payload (<code>iv</code>, <code>ciphertext</code>, <code>tag</code>) and a menu to interact with Alice or Bob.</li>
-<li>Selecting <strong>Alice</strong> printed Alice’s DH public key and the modulus <code>p</code>, then prompted for my DH public key. Alice computes <code>s = Y^a mod p</code>, derives an AES key from <code>s</code>, and returns a JSON AES-GCM message using that key.</li>
-</ul>
-<h2 id="2-key-derivation-discovery-using-the-1-trick">2) Key derivation discovery (using the “1 trick”)<a class="headerlink" href="#2-key-derivation-discovery-using-the-1-trick" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Sending <code>Your Key = 1</code> forced the shared secret to 1 since <code>1^a == 1 mod p</code>.</li>
-<li>Alice encrypts a “welcome banner” that I recognized as known plaintext after trying different KDF guesses.</li>
-<li>The working KDF was <code>AESkey = SHA256(str(shared_secret).encode())</code>, i.e., <code>sha256(str(s).encode()).digest()</code>.</li>
-</ul>
-<h2 id="3-the-real-vulnerability-no-subgroup-validation">3) The real vulnerability: no subgroup validation<a class="headerlink" href="#3-the-real-vulnerability-no-subgroup-validation" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Because the server never checks subgroup membership, any element whose order divides <code>p-1</code> is accepted. In <code>Z_p^*</code>, orders are factors of <code>p-1</code>.</li>
-<li>Sending an element of a small order <code>q | (p-1)</code> confines the shared secret <code>s = h^a</code> to at most <code>q</code> values, so I could brute-force <code>a mod q</code> using the known plaintext and AES-GCM tag verification.</li>
-</ul>
-<h2 id="4-how-to-get-an-element-of-order-q">4) How to get an element of order <code>q</code><a class="headerlink" href="#4-how-to-get-an-element-of-order-q" title="Permanent link">&para;</a></h2>
-<p>For each small prime factor <code>q</code> of <code>p-1</code>, I did:
-1. Choose random <code>r</code> in <code>[2, p-2)</code>.
-2. Compute <code>h = r^((p-1)/q) mod p</code>.
-3. If <code>h != 1</code>, it has order <code>q</code> with overwhelming probability. I used that as my public key to communicate with Alice.</p>
-<h2 id="5-recover-a-mod-q-using-alice-tag-verification">5) Recover <code>a mod q</code> using Alice + tag verification<a class="headerlink" href="#5-recover-a-mod-q-using-alice-tag-verification" title="Permanent link">&para;</a></h2>
+<h1 id="savemefromthishell-aes-custom-writeup-solvers">SaveMeFromThisHell — AES (custom) Writeup + Solvers<a class="headerlink" href="#savemefromthishell-aes-custom-writeup-solvers" title="Permanent link">&para;</a></h1>
+<h2 id="what-i-was-given">What I Was Given<a class="headerlink" href="#what-i-was-given" title="Permanent link">&para;</a></h2>
+<p>From <code>README.md</code>, I noted:
+- The challenge is “AES” and the flag format is <code>BITSCTF{...}</code>.</p>
+<p>From <code>aes.py</code>, I saw:
+- It is <strong>not standard AES</strong>:
+  - The S-box is custom: <code>SBOX[x] = gf_pow(x, 23) ^ 0x63</code>.
+  - The number of rounds is only <strong>4</strong> (<code>AES.ROUNDS = 4</code>), not 10/12/14.</p>
+<p>From <code>output(1).txt</code>, I pulled:
+- <code>key_hint</code> (hex) is a <strong>13-byte prefix</strong> of the AES key.
+- <code>encrypted_flag</code> (hex) is the flag ciphertext (64 bytes = 4 blocks).
+- 1000 known <code>(plaintext, ciphertext)</code> pairs (each 16 bytes, hex).</p>
+<p>So the AES key is 16 bytes, and I knew 13 bytes → <strong>only 3 bytes were unknown</strong>:
+- Search space = <code>2^(8*3) = 2^24 = 16,777,216</code> candidates.
+That was totally brute-forceable with a fast check.</p>
+<hr />
+<h2 id="attack-plan">Attack Plan<a class="headerlink" href="#attack-plan" title="Permanent link">&para;</a></h2>
 <ol>
-<li>I sent Alice <code>Your Key = h</code> (order <code>q</code>) and collected <code>(iv, ciphertext, tag)</code>.</li>
-<li>For each candidate <code>e in [0, q-1]</code>, I computed <code>s_e = h^e mod p</code>, derived <code>key = sha256(str(s_e).encode()).digest()</code>, and attempted AES-GCM decrypt with the known welcome banner.</li>
-<li>The unique <code>e</code> that decrypted correctly (and verified the tag) gave <code>a ≡ e mod q</code>.</li>
+<li>I parsed <code>output(1).txt</code>:</li>
+<li>read <code>key_hint</code></li>
+<li>read one (or a few) plaintext/ciphertext sample pairs</li>
+<li>read <code>encrypted_flag</code></li>
+<li>I brute-forced the last 3 key bytes:</li>
+<li>candidate key = <code>key_hint || b0 || b1 || b2</code></li>
+<li>encrypt one known plaintext block with candidate key</li>
+<li>if it matches the known ciphertext block, verify with a second sample (optional)</li>
+<li>I decrypted <code>encrypted_flag</code>:</li>
+<li>ECB mode (it’s block-by-block AES with no IV shown)</li>
+<li>remove PKCS#7 padding</li>
+<li>I printed the flag.</li>
 </ol>
-<h2 id="6-reconstruct-alices-private-exponent-with-crt">6) Reconstruct Alice’s private exponent with CRT<a class="headerlink" href="#6-reconstruct-alices-private-exponent-with-crt" title="Permanent link">&para;</a></h2>
-<ol>
-<li>I factored <code>p-1 = ∏ q_i</code> into its prime factors (all quite small since <code>p-1</code> is smooth).</li>
-<li>I repeated the above step for each <code>q_i</code>, collecting congruences <code>a ≡ e_i mod q_i</code>.</li>
-<li>I applied the Chinese Remainder Theorem to reconstruct <code>a mod (p-1)</code>.</li>
-</ol>
-<h2 id="7-decrypt-the-intercepted-traffic-get-the-flag">7) Decrypt the intercepted traffic (get the flag)<a class="headerlink" href="#7-decrypt-the-intercepted-traffic-get-the-flag" title="Permanent link">&para;</a></h2>
-<ol>
-<li>I computed the real shared secret with Bob’s public key: <code>s = (BobPub)^a mod p</code>.</li>
-<li>I derived the AES key using the discovered KDF (<code>sha256(str(s).encode()).digest()</code>).</li>
-<li>I decrypted the intercepted AES-GCM payload and extracted <code>HACKDAY{...}</code>.</li>
-</ol>
-<h2 id="8-why-the-challenge-name-fits">8) Why the challenge name fits<a class="headerlink" href="#8-why-the-challenge-name-fits" title="Permanent link">&para;</a></h2>
-<ul>
-<li>“As small as possible” hints that the private secret can be forced into <strong>tiny subgroups</strong>, making brute-force over those small sets practical and enabling full exponent recovery.</li>
-</ul>
+<hr />
+<h2 id="solver-1-full-brute-force-key-recovery-flag-decryption">Solver 1 — Full brute-force key recovery + flag decryption<a class="headerlink" href="#solver-1-full-brute-force-key-recovery-flag-decryption" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Place this script in the same directory as <code>aes.py</code> and <code>output(1).txt</code>.</p>
+</blockquote>
+<p>```python</p>
+<h1 id="usrbinenv-python3">!/usr/bin/env python3<a class="headerlink" href="#usrbinenv-python3" title="Permanent link">&para;</a></h1>
+<p>import binascii
+from pathlib import Path</p>
+<h1 id="import-the-provided-aes-implementation">Import the provided AES implementation<a class="headerlink" href="#import-the-provided-aes-implementation" title="Permanent link">&para;</a></h1>
+<p>from aes import AES</p>
+<p>def pkcs7_unpad(data: bytes) -&gt; bytes:
+    if not data:
+        raise ValueError("empty")
+    pad = data[-1]
+    if pad == 0 or pad &gt; 16:
+        raise ValueError("bad padding length")
+    if data[-pad:] != bytes([pad]) * pad:
+        raise ValueError("bad padding bytes")
+    return data[:-pad]</p>
+<p>def parse_output(path: str):
+    lines = Path(path).read_text().splitlines()</p>
+<div class="language-text highlight"><pre><span></span><code>key_hint = bytes.fromhex(lines[0].split(&quot;:&quot;)[1].strip())
+encrypted_flag = bytes.fromhex(lines[1].split(&quot;:&quot;)[1].strip())
+
+# samples start after &quot;samples:&quot;
+i = lines.index(&quot;samples:&quot;) + 1
+samples = []
+for line in lines[i:]:
+    if not line.strip():
+        continue
+    pt_hex, ct_hex = line.split(&quot;,&quot;)
+    pt = bytes.fromhex(pt_hex.strip())
+    ct = bytes.fromhex(ct_hex.strip())
+    samples.append((pt, ct))
+
+return key_hint, encrypted_flag, samples
+</code></pre></div>
+<p>def check_key(key: bytes, samples):
+    aes = AES(key)
+    # check 2 samples to avoid rare false positives
+    for (pt, ct) in samples[:2]:
+        if aes.encrypt(pt) != ct:
+            return False
+    return True</p>
+<p>def recover_key(key_hint: bytes, samples):
+    assert len(key_hint) == 13, "key_hint must be 13 bytes"
+    prefix = key_hint</p>
+<div class="language-text highlight"><pre><span></span><code># Brute-force 24 bits: 0x000000 .. 0xFFFFFF
+for x in range(1 &lt;&lt; 24):
+    suffix = bytes([(x &gt;&gt; 16) &amp; 0xFF, (x &gt;&gt; 8) &amp; 0xFF, x &amp; 0xFF])
+    key = prefix + suffix
+    if check_key(key, samples):
+        return key
+
+    # tiny progress print (optional)
+    if x % 0x200000 == 0 and x != 0:
+        print(f&quot;checked {x:#x} candidates...&quot;)
+
+raise RuntimeError(&quot;key not found&quot;)
+</code></pre></div>
+<p>def decrypt_flag(key: bytes, encrypted_flag: bytes) -&gt; bytes:
+    aes = AES(key)
+    if len(encrypted_flag) % 16 != 0:
+        raise ValueError("ciphertext not multiple of 16 bytes")</p>
+<div class="language-text highlight"><pre><span></span><code>pt = b&quot;&quot;.join(aes.decrypt(encrypted_flag[i:i+16]) for i in range(0, len(encrypted_flag), 16))
+return pkcs7_unpad(pt)
+</code></pre></div>
+<p>def main():
+    key_hint, encrypted_flag, samples = parse_output("output(1).txt")
+    print(f"[+] key_hint = {key_hint.hex()} ({len(key_hint)} bytes)")
+    print(f"[+] samples  = {len(samples)} blocks")
+    print(f"[+] flag ct  = {len(encrypted_flag)} bytes")</p>
+<div class="language-text highlight"><pre><span></span><code>key = recover_key(key_hint, samples)
+print(f&quot;[+] recovered key = {key.hex()}&quot;)
+
+flag = decrypt_flag(key, encrypted_flag)
+print(f&quot;[+] flag = {flag.decode(errors=&#39;replace&#39;)}&quot;)
+</code></pre></div>
+<p>if <strong>name</strong> == "<strong>main</strong>":
+    main()</p>
 
 
 
@@ -2134,7 +2065,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trust me I&#39;m authenticated">
+          <a href="../too-genus-curve/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Too Genus Curve">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2144,20 +2075,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Trust me I'm authenticated
+                Too Genus Curve
               </div>
             </div>
           </a>
         
         
           
-          <a href="../matrix/" class="md-footer__link md-footer__link--next" aria-label="Next: Matrix Challenge — Steganography">
+          <a href="../../hackena/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Matrix Challenge — Steganography
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

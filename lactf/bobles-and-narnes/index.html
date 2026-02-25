@@ -12,13 +12,13 @@
         <meta name="author" content="GougasseHamza">
       
       
-        <link rel="canonical" href="https://GougasseHamza.github.io/wp/hackday2026/crypto/">
+        <link rel="canonical" href="https://GougasseHamza.github.io/wp/lactf/bobles-and-narnes/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../append-note/">
       
       
-        <link rel="next" href="../matrix/">
+        <link rel="next" href="../../uofctf/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>As Small As Possible - CTF Writeups</title>
+        <title>Bobles and Narnes - CTF Writeups</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#as-small-as-possible-dh-aes-gcm" class="md-skip">
+        <a href="#bobles-and-narnes-first-person-writeup" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              As Small As Possible
+              Bobles and Narnes
             
           </span>
         </div>
@@ -269,13 +269,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../hackday2026/" class="md-tabs__link">
           
   
   
@@ -371,11 +369,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../lactf/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -709,31 +709,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -751,7 +748,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -769,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../hackday2026/" class="md-nav__link">
         
   
   
@@ -794,37 +791,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    As Small As Possible
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../hackday2026/crypto/" class="md-nav__link">
         
   
   
@@ -840,125 +810,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TL;DR
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-recon-what-the-service-does" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1) Recon: what the service does
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-key-derivation-discovery-using-the-1-trick" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2) Key derivation discovery (using the “1 trick”)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-real-vulnerability-no-subgroup-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3) The real vulnerability: no subgroup validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-how-to-get-an-element-of-order-q" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4) How to get an element of order q
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-recover-a-mod-q-using-alice-tag-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5) Recover a mod q using Alice + tag verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-reconstruct-alices-private-exponent-with-crt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6) Reconstruct Alice’s private exponent with CRT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-decrypt-the-intercepted-traffic-get-the-flag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7) Decrypt the intercepted traffic (get the flag)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-why-the-challenge-name-fits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8) Why the challenge name fits
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -971,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../matrix/" class="md-nav__link">
+      <a href="../../hackday2026/matrix/" class="md-nav__link">
         
   
   
@@ -1555,28 +1406,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -1594,7 +1448,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1612,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lactf/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1640,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lactf/append-note/" class="md-nav__link">
+      <a href="../append-note/" class="md-nav__link">
         
   
   
@@ -1665,10 +1519,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lactf/bobles-and-narnes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bobles and Narnes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1684,6 +1565,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenge-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-recon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initial Recon
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#root-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Root Cause
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploit-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploit Script
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1867,10 +1823,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
+  <a href="#challenge-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TL;DR
+        Challenge Overview
       
     </span>
   </a>
@@ -1878,10 +1834,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-recon-what-the-service-does" class="md-nav__link">
+  <a href="#initial-recon" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1) Recon: what the service does
+        Initial Recon
       
     </span>
   </a>
@@ -1889,10 +1845,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-derivation-discovery-using-the-1-trick" class="md-nav__link">
+  <a href="#root-cause" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2) Key derivation discovery (using the “1 trick”)
+        Root Cause
       
     </span>
   </a>
@@ -1900,10 +1856,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-the-real-vulnerability-no-subgroup-validation" class="md-nav__link">
+  <a href="#exploit-script" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3) The real vulnerability: no subgroup validation
+        Exploit Script
       
     </span>
   </a>
@@ -1911,54 +1867,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-how-to-get-an-element-of-order-q" class="md-nav__link">
+  <a href="#result" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4) How to get an element of order q
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-recover-a-mod-q-using-alice-tag-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5) Recover a mod q using Alice + tag verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-reconstruct-alices-private-exponent-with-crt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6) Reconstruct Alice’s private exponent with CRT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-decrypt-the-intercepted-traffic-get-the-flag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7) Decrypt the intercepted traffic (get the flag)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-why-the-challenge-name-fits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8) Why the challenge name fits
+        Result
       
     </span>
   </a>
@@ -1982,7 +1894,7 @@
 
 
   
-    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/hackday2026/crypto.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/lactf/bobles-and-narnes.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -1991,62 +1903,86 @@
     
       
     
-    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/hackday2026/crypto.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/lactf/bobles-and-narnes.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="as-small-as-possible-dh-aes-gcm">As Small As Possible (DH + AES-GCM)<a class="headerlink" href="#as-small-as-possible-dh-aes-gcm" title="Permanent link">&para;</a></h1>
-<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
-<ul>
-<li>The server accepts <strong>arbitrary Diffie–Hellman public keys</strong> without subgroup checks, so I could force Alice’s shared secret into tiny factors of <code>p-1</code>.</li>
-<li>Recovering Alice’s exponent modulo each small prime and recombining with CRT let me derive the real shared secret and decrypt the intercepted AES-GCM traffic.</li>
-</ul>
-<h2 id="1-recon-what-the-service-does">1) Recon: what the service does<a class="headerlink" href="#1-recon-what-the-service-does" title="Permanent link">&para;</a></h2>
-<ul>
-<li>When I connected to the challenge I saw an intercepted AES-GCM payload (<code>iv</code>, <code>ciphertext</code>, <code>tag</code>) and a menu to interact with Alice or Bob.</li>
-<li>Selecting <strong>Alice</strong> printed Alice’s DH public key and the modulus <code>p</code>, then prompted for my DH public key. Alice computes <code>s = Y^a mod p</code>, derives an AES key from <code>s</code>, and returns a JSON AES-GCM message using that key.</li>
-</ul>
-<h2 id="2-key-derivation-discovery-using-the-1-trick">2) Key derivation discovery (using the “1 trick”)<a class="headerlink" href="#2-key-derivation-discovery-using-the-1-trick" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Sending <code>Your Key = 1</code> forced the shared secret to 1 since <code>1^a == 1 mod p</code>.</li>
-<li>Alice encrypts a “welcome banner” that I recognized as known plaintext after trying different KDF guesses.</li>
-<li>The working KDF was <code>AESkey = SHA256(str(shared_secret).encode())</code>, i.e., <code>sha256(str(s).encode()).digest()</code>.</li>
-</ul>
-<h2 id="3-the-real-vulnerability-no-subgroup-validation">3) The real vulnerability: no subgroup validation<a class="headerlink" href="#3-the-real-vulnerability-no-subgroup-validation" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Because the server never checks subgroup membership, any element whose order divides <code>p-1</code> is accepted. In <code>Z_p^*</code>, orders are factors of <code>p-1</code>.</li>
-<li>Sending an element of a small order <code>q | (p-1)</code> confines the shared secret <code>s = h^a</code> to at most <code>q</code> values, so I could brute-force <code>a mod q</code> using the known plaintext and AES-GCM tag verification.</li>
-</ul>
-<h2 id="4-how-to-get-an-element-of-order-q">4) How to get an element of order <code>q</code><a class="headerlink" href="#4-how-to-get-an-element-of-order-q" title="Permanent link">&para;</a></h2>
-<p>For each small prime factor <code>q</code> of <code>p-1</code>, I did:
-1. Choose random <code>r</code> in <code>[2, p-2)</code>.
-2. Compute <code>h = r^((p-1)/q) mod p</code>.
-3. If <code>h != 1</code>, it has order <code>q</code> with overwhelming probability. I used that as my public key to communicate with Alice.</p>
-<h2 id="5-recover-a-mod-q-using-alice-tag-verification">5) Recover <code>a mod q</code> using Alice + tag verification<a class="headerlink" href="#5-recover-a-mod-q-using-alice-tag-verification" title="Permanent link">&para;</a></h2>
+<h1 id="bobles-and-narnes-first-person-writeup">Bobles and Narnes - First-Person Writeup<a class="headerlink" href="#bobles-and-narnes-first-person-writeup" title="Permanent link">&para;</a></h1>
+<h2 id="challenge-overview">Challenge Overview<a class="headerlink" href="#challenge-overview" title="Permanent link">&para;</a></h2>
+<p>I analyzed a Bun + Express bookstore app where I started with <code>$1000</code>, but the <code>Flag</code> item cost <code>$1,000,000</code>.
+At first glance, that looked impossible to buy directly.</p>
+<p>The target behavior was:</p>
 <ol>
-<li>I sent Alice <code>Your Key = h</code> (order <code>q</code>) and collected <code>(iv, ciphertext, tag)</code>.</li>
-<li>For each candidate <code>e in [0, q-1]</code>, I computed <code>s_e = h^e mod p</code>, derived <code>key = sha256(str(s_e).encode()).digest()</code>, and attempted AES-GCM decrypt with the known welcome banner.</li>
-<li>The unique <code>e</code> that decrypted correctly (and verified the tag) gave <code>a ≡ e mod q</code>.</li>
+<li>Add items to cart via <code>/cart/add</code>.</li>
+<li>Checkout via <code>/cart/checkout</code>.</li>
+<li>Receive a ZIP of purchased files.</li>
 </ol>
-<h2 id="6-reconstruct-alices-private-exponent-with-crt">6) Reconstruct Alice’s private exponent with CRT<a class="headerlink" href="#6-reconstruct-alices-private-exponent-with-crt" title="Permanent link">&para;</a></h2>
+<p>The key idea was to make the server think the expensive flag item was a sample during the price check, but store it as a full item in the database before checkout.</p>
+<h2 id="initial-recon">Initial Recon<a class="headerlink" href="#initial-recon" title="Permanent link">&para;</a></h2>
+<p>I reviewed the main backend logic in <code>server.js</code>.</p>
+<p>Important parts I identified:</p>
 <ol>
-<li>I factored <code>p-1 = ∏ q_i</code> into its prime factors (all quite small since <code>p-1</code> is smooth).</li>
-<li>I repeated the above step for each <code>q_i</code>, collecting congruences <code>a ≡ e_i mod q_i</code>.</li>
-<li>I applied the Chinese Remainder Theorem to reconstruct <code>a mod (p-1)</code>.</li>
+<li>Cart schema stores <code>is_sample</code> in <code>cart_items</code> (<code>server.js:40</code>).</li>
+<li>Price check in <code>/cart/add</code> excludes any product where <code>is_sample</code> is truthy (<code>server.js:138</code>).</li>
+<li>Cart entries are bulk inserted using <code>await db\</code>INSERT INTO cart_items ${db(cartEntries)}`<code>(</code>server.js:150`).</li>
+<li>During checkout, file selection depends on DB <code>item.is_sample</code>; truthy gives <code>*_sample</code>, falsy gives full file (<code>server.js:170</code>).</li>
 </ol>
-<h2 id="7-decrypt-the-intercepted-traffic-get-the-flag">7) Decrypt the intercepted traffic (get the flag)<a class="headerlink" href="#7-decrypt-the-intercepted-traffic-get-the-flag" title="Permanent link">&para;</a></h2>
+<p>I also checked frontend behavior in <code>site/main.js</code>:</p>
 <ol>
-<li>I computed the real shared secret with Bob’s public key: <code>s = (BobPub)^a mod p</code>.</li>
-<li>I derived the AES key using the discovered KDF (<code>sha256(str(s).encode()).digest()</code>).</li>
-<li>I decrypted the intercepted AES-GCM payload and extracted <code>HACKDAY{...}</code>.</li>
+<li>UI sends <code>is_sample: true/false</code> from button text (<code>site/main.js:56</code>, <code>site/main.js:61</code>).</li>
+<li>There is no server-side validation that request objects have consistent keys.</li>
 </ol>
-<h2 id="8-why-the-challenge-name-fits">8) Why the challenge name fits<a class="headerlink" href="#8-why-the-challenge-name-fits" title="Permanent link">&para;</a></h2>
-<ul>
-<li>“As small as possible” hints that the private secret can be forced into <strong>tiny subgroups</strong>, making brute-force over those small sets practical and enabling full exponent recovery.</li>
-</ul>
+<h2 id="root-cause">Root Cause<a class="headerlink" href="#root-cause" title="Permanent link">&para;</a></h2>
+<p>The exploit comes from a mismatch between:</p>
+<ol>
+<li>Price calculation using raw user JSON (<code>productsToAdd</code>) before insert.</li>
+<li>Bun SQL helper <code>db(cartEntries)</code> inferring insert columns from object keys.</li>
+</ol>
+<p>In <code>solve.py</code>, I exploited this by sending two objects in one <code>products</code> array:</p>
+<ol>
+<li>First object: cheap book with <strong>no</strong> <code>is_sample</code> key.</li>
+<li>Second object: flag book with <code>is_sample: 1</code>.</li>
+</ol>
+<p>Because the first object lacks <code>is_sample</code>, the Bun helper builds insert columns without <code>is_sample</code>, so the second object’s <code>is_sample</code> is dropped on insert.
+That leaves DB rows with <code>is_sample = NULL</code>.</p>
+<p>Why this works:</p>
+<ol>
+<li>Add-time price check:</li>
+<li>For the flag object, <code>is_sample = 1</code>, so it is treated as sample and excluded from <code>additionalSum</code> (<code>server.js:138</code>).</li>
+<li>Only the cheap item is charged, so request passes.</li>
+<li>Checkout-time file selection:</li>
+<li>Inserted <code>is_sample</code> is <code>NULL</code>, which is falsy.</li>
+<li>Falsy branch serves the full file (<code>flag.txt</code>) instead of <code>flag_sample.txt</code> (<code>server.js:170</code>).</li>
+</ol>
+<p>I confirmed the challenge intentionally includes only <code>books/flag_sample.txt</code>, which contains just <code>lactf{</code>, while the real <code>flag.txt</code> is available remotely through the vulnerable checkout path.</p>
+<h2 id="exploit-script">Exploit Script<a class="headerlink" href="#exploit-script" title="Permanent link">&para;</a></h2>
+<p>I used the provided <code>solve.py</code>, which does:</p>
+<ol>
+<li>Registers a random user.</li>
+<li>Sends crafted <code>/cart/add</code> JSON with mixed keys.</li>
+<li>Calls <code>/cart/checkout</code>.</li>
+<li>Parses returned ZIP and prints file contents.</li>
+</ol>
+<p>Critical payload:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;products&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="p">{</span><span class="nt">&quot;book_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a3e33c2505a19d18&quot;</span><span class="p">},</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">{</span><span class="nt">&quot;book_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2a16e349fb9045fa&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;is_sample&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">}</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="result">Result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h2>
+<p>The saved output in <code>out</code> shows successful exploitation:</p>
+<ol>
+<li>Remaining balance after add: <code>990</code>.</li>
+<li>ZIP contained <code>flag.txt</code> and <code>part-time-parliament.pdf</code>.</li>
+<li><code>flag.txt</code> content was printed directly.</li>
+</ol>
+<p>Recovered flag:</p>
+<p><code>lactf{hojicha_chocolate_dubai_labubu}</code></p>
 
 
 
@@ -2134,7 +2070,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trust me I&#39;m authenticated">
+          <a href="../append-note/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Append Note">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2144,20 +2080,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Trust me I'm authenticated
+                Append Note
               </div>
             </div>
           </a>
         
         
           
-          <a href="../matrix/" class="md-footer__link md-footer__link--next" aria-label="Next: Matrix Challenge — Steganography">
+          <a href="../../uofctf/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Matrix Challenge — Steganography
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

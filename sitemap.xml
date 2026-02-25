@@ -2,46 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://GougasseHamza.github.io/wp/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/about/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/0xfun/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/0xfun/fortune-teller/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/0xfun/switchcaseadvocate/</loc>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/asis-mail/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/bookmarks/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/rick-gallery/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/asis-ctf/sanchess/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/bits/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/bits/savemefromthishell-aes/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/bits/too-genus-curve/</loc>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/hackday2026/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/hackday2026/crypto/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/hackday2026/matrix/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/hackena/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/hackena/lwe-lattice/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/hackena/smol-web-player/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/lactf/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/lactf/append-note/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/lactf/bobles-and-narnes/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/nullconctf/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/nullconctf/catboard/</loc>
+         <lastmod>2026-02-25</lastmod>
+    </url>
+    <url>
+         <loc>https://GougasseHamza.github.io/wp/uofctf/</loc>
+         <lastmod>2026-02-25</lastmod>
     </url>
     <url>
          <loc>https://GougasseHamza.github.io/wp/uofctf/misc/</loc>
-         <lastmod>2026-01-27</lastmod>
+         <lastmod>2026-02-25</lastmod>
     </url>
 </urlset>

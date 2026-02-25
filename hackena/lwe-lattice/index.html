@@ -12,13 +12,13 @@
         <meta name="author" content="GougasseHamza">
       
       
-        <link rel="canonical" href="https://GougasseHamza.github.io/wp/hackday2026/crypto/">
+        <link rel="canonical" href="https://GougasseHamza.github.io/wp/hackena/lwe-lattice/">
       
       
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../matrix/">
+        <link rel="next" href="../smol-web-player/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>As Small As Possible - CTF Writeups</title>
+        <title>LWE Lattice - CTF Writeups</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#as-small-as-possible-dh-aes-gcm" class="md-skip">
+        <a href="#hackena-ctf-lwe-lattice-challenge-writeup" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              As Small As Possible
+              LWE Lattice
             
           </span>
         </div>
@@ -269,13 +269,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../hackday2026/" class="md-tabs__link">
           
   
   
@@ -331,11 +329,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../hackena/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -709,31 +709,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -751,7 +748,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -769,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../hackday2026/" class="md-nav__link">
         
   
   
@@ -794,37 +791,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    As Small As Possible
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../hackday2026/crypto/" class="md-nav__link">
         
   
   
@@ -840,125 +810,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TL;DR
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-recon-what-the-service-does" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1) Recon: what the service does
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-key-derivation-discovery-using-the-1-trick" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2) Key derivation discovery (using the “1 trick”)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-real-vulnerability-no-subgroup-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3) The real vulnerability: no subgroup validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-how-to-get-an-element-of-order-q" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4) How to get an element of order q
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-recover-a-mod-q-using-alice-tag-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5) Recover a mod q using Alice + tag verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-reconstruct-alices-private-exponent-with-crt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6) Reconstruct Alice’s private exponent with CRT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-decrypt-the-intercepted-traffic-get-the-flag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7) Decrypt the intercepted traffic (get the flag)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-why-the-challenge-name-fits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8) Why the challenge name fits
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -971,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../matrix/" class="md-nav__link">
+      <a href="../../hackday2026/matrix/" class="md-nav__link">
         
   
   
@@ -1293,28 +1144,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1332,7 +1186,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1350,7 +1204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hackena/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1375,10 +1229,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../hackena/lwe-lattice/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LWE Lattice
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1394,6 +1275,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#challenge-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-scheme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding the Scheme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kannans-embedding-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kannan's Embedding Technique
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flag
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1406,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hackena/smol-web-player/" class="md-nav__link">
+      <a href="../smol-web-player/" class="md-nav__link">
         
   
   
@@ -1867,10 +1868,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
+  <a href="#challenge-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TL;DR
+        Challenge Overview
       
     </span>
   </a>
@@ -1878,10 +1879,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-recon-what-the-service-does" class="md-nav__link">
+  <a href="#analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1) Recon: what the service does
+        Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-scheme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding the Scheme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kannans-embedding-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kannan's Embedding Technique
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation
       
     </span>
   </a>
@@ -1889,76 +1957,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-key-derivation-discovery-using-the-1-trick" class="md-nav__link">
+  <a href="#flag" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2) Key derivation discovery (using the “1 trick”)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-real-vulnerability-no-subgroup-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3) The real vulnerability: no subgroup validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-how-to-get-an-element-of-order-q" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4) How to get an element of order q
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-recover-a-mod-q-using-alice-tag-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5) Recover a mod q using Alice + tag verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-reconstruct-alices-private-exponent-with-crt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6) Reconstruct Alice’s private exponent with CRT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-decrypt-the-intercepted-traffic-get-the-flag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7) Decrypt the intercepted traffic (get the flag)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-why-the-challenge-name-fits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8) Why the challenge name fits
+        Flag
       
     </span>
   </a>
@@ -1982,7 +1984,7 @@
 
 
   
-    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/hackday2026/crypto.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/GougasseHamza/wp/edit/main/docs/hackena/lwe-lattice.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -1991,62 +1993,124 @@
     
       
     
-    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/hackday2026/crypto.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/GougasseHamza/wp/raw/main/docs/hackena/lwe-lattice.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="as-small-as-possible-dh-aes-gcm">As Small As Possible (DH + AES-GCM)<a class="headerlink" href="#as-small-as-possible-dh-aes-gcm" title="Permanent link">&para;</a></h1>
-<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
-<ul>
-<li>The server accepts <strong>arbitrary Diffie–Hellman public keys</strong> without subgroup checks, so I could force Alice’s shared secret into tiny factors of <code>p-1</code>.</li>
-<li>Recovering Alice’s exponent modulo each small prime and recombining with CRT let me derive the real shared secret and decrypt the intercepted AES-GCM traffic.</li>
-</ul>
-<h2 id="1-recon-what-the-service-does">1) Recon: what the service does<a class="headerlink" href="#1-recon-what-the-service-does" title="Permanent link">&para;</a></h2>
-<ul>
-<li>When I connected to the challenge I saw an intercepted AES-GCM payload (<code>iv</code>, <code>ciphertext</code>, <code>tag</code>) and a menu to interact with Alice or Bob.</li>
-<li>Selecting <strong>Alice</strong> printed Alice’s DH public key and the modulus <code>p</code>, then prompted for my DH public key. Alice computes <code>s = Y^a mod p</code>, derives an AES key from <code>s</code>, and returns a JSON AES-GCM message using that key.</li>
-</ul>
-<h2 id="2-key-derivation-discovery-using-the-1-trick">2) Key derivation discovery (using the “1 trick”)<a class="headerlink" href="#2-key-derivation-discovery-using-the-1-trick" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Sending <code>Your Key = 1</code> forced the shared secret to 1 since <code>1^a == 1 mod p</code>.</li>
-<li>Alice encrypts a “welcome banner” that I recognized as known plaintext after trying different KDF guesses.</li>
-<li>The working KDF was <code>AESkey = SHA256(str(shared_secret).encode())</code>, i.e., <code>sha256(str(s).encode()).digest()</code>.</li>
-</ul>
-<h2 id="3-the-real-vulnerability-no-subgroup-validation">3) The real vulnerability: no subgroup validation<a class="headerlink" href="#3-the-real-vulnerability-no-subgroup-validation" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Because the server never checks subgroup membership, any element whose order divides <code>p-1</code> is accepted. In <code>Z_p^*</code>, orders are factors of <code>p-1</code>.</li>
-<li>Sending an element of a small order <code>q | (p-1)</code> confines the shared secret <code>s = h^a</code> to at most <code>q</code> values, so I could brute-force <code>a mod q</code> using the known plaintext and AES-GCM tag verification.</li>
-</ul>
-<h2 id="4-how-to-get-an-element-of-order-q">4) How to get an element of order <code>q</code><a class="headerlink" href="#4-how-to-get-an-element-of-order-q" title="Permanent link">&para;</a></h2>
-<p>For each small prime factor <code>q</code> of <code>p-1</code>, I did:
-1. Choose random <code>r</code> in <code>[2, p-2)</code>.
-2. Compute <code>h = r^((p-1)/q) mod p</code>.
-3. If <code>h != 1</code>, it has order <code>q</code> with overwhelming probability. I used that as my public key to communicate with Alice.</p>
-<h2 id="5-recover-a-mod-q-using-alice-tag-verification">5) Recover <code>a mod q</code> using Alice + tag verification<a class="headerlink" href="#5-recover-a-mod-q-using-alice-tag-verification" title="Permanent link">&para;</a></h2>
+<h1 id="hackena-ctf-lwe-lattice-challenge-writeup">Hackena CTF - LWE Lattice Challenge Writeup<a class="headerlink" href="#hackena-ctf-lwe-lattice-challenge-writeup" title="Permanent link">&para;</a></h1>
+<h2 id="challenge-overview">Challenge Overview<a class="headerlink" href="#challenge-overview" title="Permanent link">&para;</a></h2>
+<p>I was given a Python script (<code>chall.py</code>) that implements a lattice-based cryptographic scheme and an output file containing the public parameters and encrypted flag.</p>
+<h2 id="analysis">Analysis<a class="headerlink" href="#analysis" title="Permanent link">&para;</a></h2>
+<h3 id="understanding-the-scheme">Understanding the Scheme<a class="headerlink" href="#understanding-the-scheme" title="Permanent link">&para;</a></h3>
+<p>The challenge constructs the following:</p>
 <ol>
-<li>I sent Alice <code>Your Key = h</code> (order <code>q</code>) and collected <code>(iv, ciphertext, tag)</code>.</li>
-<li>For each candidate <code>e in [0, q-1]</code>, I computed <code>s_e = h^e mod p</code>, derived <code>key = sha256(str(s_e).encode()).digest()</code>, and attempted AES-GCM decrypt with the known welcome banner.</li>
-<li>The unique <code>e</code> that decrypted correctly (and verified the tag) gave <code>a ≡ e mod q</code>.</li>
+<li><strong>Secret generation</strong>: A small vector <code>z ∈ {-1, 0, 1}^n</code> is generated</li>
+<li>
+<p><strong>Lattice basis <code>Bs</code></strong>: A special structured matrix of the form:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Bs = [ q·I_k  |    0    ]
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>     [   X    | I_{n-k} ]
+</span></code></pre></div>
+   where <code>k = 12</code>, <code>n = 40</code>, and <code>q = 12289</code></p>
+</li>
+<li>
+<p><strong>Secret <code>s</code></strong>: Computed as <code>s = z · Bs (mod q)</code></p>
+</li>
+<li><strong>LWE instance</strong>: <code>b = s·A + e (mod q)</code> where <code>e ∈ {-1, 0, 1}^m</code> is small error</li>
+<li><strong>Encryption</strong>: The flag is XOR'd with <code>SHA256(s)</code></li>
 </ol>
-<h2 id="6-reconstruct-alices-private-exponent-with-crt">6) Reconstruct Alice’s private exponent with CRT<a class="headerlink" href="#6-reconstruct-alices-private-exponent-with-crt" title="Permanent link">&para;</a></h2>
-<ol>
-<li>I factored <code>p-1 = ∏ q_i</code> into its prime factors (all quite small since <code>p-1</code> is smooth).</li>
-<li>I repeated the above step for each <code>q_i</code>, collecting congruences <code>a ≡ e_i mod q_i</code>.</li>
-<li>I applied the Chinese Remainder Theorem to reconstruct <code>a mod (p-1)</code>.</li>
-</ol>
-<h2 id="7-decrypt-the-intercepted-traffic-get-the-flag">7) Decrypt the intercepted traffic (get the flag)<a class="headerlink" href="#7-decrypt-the-intercepted-traffic-get-the-flag" title="Permanent link">&para;</a></h2>
-<ol>
-<li>I computed the real shared secret with Bob’s public key: <code>s = (BobPub)^a mod p</code>.</li>
-<li>I derived the AES key using the discovered KDF (<code>sha256(str(s).encode()).digest()</code>).</li>
-<li>I decrypted the intercepted AES-GCM payload and extracted <code>HACKDAY{...}</code>.</li>
-</ol>
-<h2 id="8-why-the-challenge-name-fits">8) Why the challenge name fits<a class="headerlink" href="#8-why-the-challenge-name-fits" title="Permanent link">&para;</a></h2>
+<h3 id="key-parameters">Key Parameters<a class="headerlink" href="#key-parameters" title="Permanent link">&para;</a></h3>
 <ul>
-<li>“As small as possible” hints that the private secret can be forced into <strong>tiny subgroups</strong>, making brute-force over those small sets practical and enabling full exponent recovery.</li>
+<li><code>q = 12289</code> (prime modulus)</li>
+<li><code>n = 40</code> (secret dimension)</li>
+<li><code>k = 12</code> (identity block size)</li>
+<li><code>m = 60</code> (LWE sample dimension)</li>
 </ul>
+<h2 id="solution-strategy">Solution Strategy<a class="headerlink" href="#solution-strategy" title="Permanent link">&para;</a></h2>
+<p>The goal is to recover <code>s</code> to derive the decryption key. Since <code>s = z·Bs</code> where <code>z</code> is small, this is a <strong>bounded distance decoding (BDD)</strong> problem that can be solved using lattice reduction.</p>
+<h3 id="kannans-embedding-technique">Kannan's Embedding Technique<a class="headerlink" href="#kannans-embedding-technique" title="Permanent link">&para;</a></h3>
+<p>I constructed a lattice that encodes both constraints:
+1. <code>s = z·Bs</code> (s lies in the Bs lattice)
+2. <code>b = s·A + e</code> (LWE relation with small error)</p>
+<p>Substituting, I got: <code>z·(Bs·A) + e ≡ b (mod q)</code></p>
+<p>I built the embedding lattice:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>L = [ q·I_m   |    0    |  0 ]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    [ (Bs·A)ᵀ |  c·I_n  |  0 ]
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    [    b    |    0    |  W ]
+</span></code></pre></div>
+<p>Where:
+- <code>c</code> is a scaling factor for the <code>z</code> components
+- <code>W</code> is the embedding weight to identify the target vector</p>
+<p>A short vector in this lattice corresponds to <code>(e, c·z, W)</code> where both <code>e</code> and <code>z</code> are small.</p>
+<h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">fpylll</span><span class="w"> </span><span class="kn">import</span> <span class="n">IntegerMatrix</span><span class="p">,</span> <span class="n">BKZ</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># Load data</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">q</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">Bs</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q&quot;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Bs&quot;</span><span class="p">]</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">enc_flag</span> <span class="o">=</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;enc_flag_hex&quot;</span><span class="p">])</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Bs</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># Compute Bs * A (mod q)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">BsA</span> <span class="o">=</span> <span class="p">[[</span><span class="nb">sum</span><span class="p">(</span><span class="n">Bs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">%</span> <span class="n">q</span> 
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># Build embedding lattice</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="n">W</span><span class="p">,</span> <span class="n">Z_scale</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="n">dim</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="n">L</span> <span class="o">=</span> <span class="n">IntegerMatrix</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">dim</span><span class="p">)</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="c1"># Fill lattice blocks</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">q</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>        <span class="n">L</span><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">BsA</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>    <span class="n">L</span><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">j</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">Z_scale</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    <span class="n">L</span><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="n">L</span><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">W</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="c1"># Run BKZ reduction</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="n">BKZ</span><span class="o">.</span><span class="n">reduction</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">BKZ</span><span class="o">.</span><span class="n">Param</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="c1"># Search for solution</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dim</span><span class="p">):</span>
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>    <span class="n">row</span> <span class="o">=</span> <span class="p">[</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dim</span><span class="p">)]</span>
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">!=</span> <span class="n">W</span><span class="p">:</span>
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>        <span class="k">continue</span>
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>
+</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a>    <span class="n">sign</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">W</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>    <span class="n">z</span> <span class="o">=</span> <span class="p">[</span><span class="n">sign</span> <span class="o">*</span> <span class="n">row</span><span class="p">[</span><span class="n">m</span> <span class="o">+</span> <span class="n">j</span><span class="p">]</span> <span class="o">//</span> <span class="n">Z_scale</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>
+</span><span id="__span-2-45"><a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>    <span class="k">if</span> <span class="nb">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">z</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-2-46"><a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a>        <span class="k">continue</span>
+</span><span id="__span-2-47"><a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>
+</span><span id="__span-2-48"><a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>    <span class="c1"># Try both z and -z</span>
+</span><span id="__span-2-49"><a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a>    <span class="k">for</span> <span class="n">z_try</span> <span class="ow">in</span> <span class="p">[</span><span class="n">z</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">z</span><span class="p">]]:</span>
+</span><span id="__span-2-50"><a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a>        <span class="n">s</span> <span class="o">=</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">z_try</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">Bs</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">%</span> <span class="n">q</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</span><span id="__span-2-51"><a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a>        <span class="n">sA</span> <span class="o">=</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">%</span> <span class="n">q</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)]</span>
+</span><span id="__span-2-52"><a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a>        <span class="n">e</span> <span class="o">=</span> <span class="p">[(</span><span class="n">b</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">sA</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="o">%</span> <span class="n">q</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)]</span>
+</span><span id="__span-2-53"><a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a>        <span class="n">e_norm</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">q</span><span class="o">//</span><span class="mi">2</span> <span class="k">else</span> <span class="n">x</span> <span class="o">-</span> <span class="n">q</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">e</span><span class="p">]</span>
+</span><span id="__span-2-54"><a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>
+</span><span id="__span-2-55"><a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a>        <span class="k">if</span> <span class="nb">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">e_norm</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-2-56"><a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a>            <span class="c1"># Decrypt flag</span>
+</span><span id="__span-2-57"><a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a>            <span class="n">key</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+</span><span id="__span-2-58"><a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a>                <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;little&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span id="__span-2-59"><a id="__codelineno-2-59" name="__codelineno-2-59" href="#__codelineno-2-59"></a>            <span class="p">))</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
+</span><span id="__span-2-60"><a id="__codelineno-2-60" name="__codelineno-2-60" href="#__codelineno-2-60"></a>            <span class="n">flag</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">enc_flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">key</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)]</span> 
+</span><span id="__span-2-61"><a id="__codelineno-2-61" name="__codelineno-2-61" href="#__codelineno-2-61"></a>                        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">enc_flag</span><span class="p">)))</span>
+</span><span id="__span-2-62"><a id="__codelineno-2-62" name="__codelineno-2-62" href="#__codelineno-2-62"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Flag: </span><span class="si">{</span><span class="n">flag</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="flag">Flag<a class="headerlink" href="#flag" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Hackena{In_Th3_Re4lm_0f_LLL_JUST_RAAAAAAAAAAAAAAAAAAA}
+</span></code></pre></div>
 
 
 
@@ -2134,7 +2198,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trust me I&#39;m authenticated">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2144,20 +2208,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Trust me I'm authenticated
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../matrix/" class="md-footer__link md-footer__link--next" aria-label="Next: Matrix Challenge — Steganography">
+          <a href="../smol-web-player/" class="md-footer__link md-footer__link--next" aria-label="Next: smol-web-player">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Matrix Challenge — Steganography
+                smol-web-player
               </div>
             </div>
             <div class="md-footer__button md-icon">
