@@ -8,7 +8,7 @@
 
 ## 1. Initial Discovery
 
-The challenge presents a "Lottery" service over a raw TCP connection. Upon connecting, the user must solve a **Proof-of-Work (PoW)** challenge from `pwn.red`. This is a rate-limiting mechanism to prevent automated spamming of the server.
+The challenge presents a "Lottery" service over a raw TCP connection. When I connected, I had to solve a **Proof-of-Work (PoW)** challenge from `pwn.red`. This is a rate-limiting mechanism to prevent automated spamming of the server.
 
 After solving the PoW, the server prompts:
 
@@ -26,7 +26,7 @@ In Bash, arithmetic contexts are surprisingly powerful:
 
 ### The Proof of Concept (PoC)
 
-By sending `0, PATH=0`, the server crashed with the following error:
+By sending `0, PATH=0`, I got the server to crash with the following error:
 `/app/run: line 14: head: command not found`
 
 This confirmed that:
@@ -39,7 +39,7 @@ This confirmed that:
 
 Attempts to read the flag directly via `cat /flag.txt` failed to produce output. Attempts to redirect output to the parent process's file descriptors (`> /proc/$PPID/fd/1`) also failed, likely due to containerization restrictions.
 
-Because we could not see the output, we switched to a **Blind Time-Based Attack**.
+Because I could not see the output, I switched to a **Blind Time-Based Attack**.
 
 ### The Challenge: No `sleep`
 
@@ -47,11 +47,11 @@ A typical timing attack relies on the `sleep` command. However, this environment
 
 ### The Solution: CPU Busy Loop
 
-To create a detectable delay, we used a Bash-native `for` loop. If a condition (e.g., "Is the first character of the flag 'u'?" ) is true, the server executes a loop counting to 3,000,000, which consumes roughly 2 seconds of CPU time.
+To create a detectable delay, I used a Bash-native `for` loop. If a condition (for example, "Is the first character of the flag 'u'?" ) is true, the server executes a loop counting to 3,000,000, which consumes roughly 2 seconds of CPU time.
 
 ## 4. The Exploit Logic
 
-We used **Binary Search** to find each character of the flag efficiently. Instead of checking every ASCII character linearly (1 to 127), binary search allows us to find a character in approximately 7 requests.
+I used **Binary Search** to find each character of the flag efficiently. Instead of checking every ASCII character linearly (1 to 127), binary search allows me to find a character in approximately 7 requests.
 
 ### The Payload Structure
 
@@ -68,7 +68,7 @@ We used **Binary Search** to find each character of the flag efficiently. Instea
 
 Solving the PoW for every guess is the main bottleneck, taking ~10 seconds per request. A single-threaded solver would take hours to retrieve a 40-character flag.
 
-We implemented a **Threaded Solver** using Python’s `ThreadPoolExecutor`. By running 4 parallel workers, we were able to process 4 characters (or 4 binary search steps) simultaneously, drastically reducing the total time.
+I implemented a **Threaded Solver** using Python’s `ThreadPoolExecutor`. By running 4 parallel workers, I could process 4 characters (or 4 binary search steps) simultaneously, drastically reducing the total time.
 
 ## 6. Execution and Final Flag
 
@@ -76,9 +76,3 @@ The solver extracted the flag character by character. The final flag revealed a 
 
 **Final Flag:**
 `uoftctf{you_won_the_LETtery_(hahahaha_get_it?)}`
-
-## 7. Key Takeaways
-
-1. **Arithmetic Contexts are Dangerous:** Never pass user input into Bash arithmetic operators; they allow for powerful command substitution.
-2. **Timing is a Universal Side-Channel:** Even when `stdout`, `stderr`, and the `sleep` command are unavailable, CPU-intensive loops can be used to leak data.
-3. **Local Performance Matters:** In challenges with Proof-of-Work, your local CPU becomes the exfiltration bottleneck; always parallelize your solver when possible.

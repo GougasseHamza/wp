@@ -52,19 +52,4 @@ The timing was tricky - I had to open a popup window that would load my injected
 
 ---
 
-## What I Learned
-
-These four challenges taught me more than just individual techniques. I learned how to think about chaining vulnerabilities, how simple bypasses can defeat complex filters, and how timing and state management matter in client-side attacks.
-
-The ASIS CTF team knows how to create challenges that simulate real-world complexity without being frustrating. Each challenge had that moment where everything clicked, and I understood not just how to exploit it, but why the vulnerability existed in the first place.
-
-| Challenge | Difficulty | Main Technique |
-|-----------|------------|----------------|
-| Rick Gallery | Easy-Medium | Case-sensitive filter bypass |
-| ASIS Mail | Medium | Vulnerability chaining (SSRF + Path Traversal + IDOR) |
-| Sanchess | Medium-Hard | Python sandbox escape, Unicode normalization |
-| Bookmarks | Hard | CRLF injection, CSP bypass, timing attack |
-
----
-
 *These writeups document my learning process and are shared for educational purposes.*

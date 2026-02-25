@@ -173,15 +173,3 @@ After a few seconds, I saw the callback with the flag:
 [>] FLAG:FLAG{...}
 ```
 
-## takeaways
-
-**Defense:** The vulnerability existed because:
-1. User input (username) was directly concatenated into HTTP header names
-2. No validation for special characters like `\r` and `\n`
-3. Python's `response.headers[key] = value` doesn't sanitize the key
-
-The fix would be to either:
-- Sanitize all user input that goes into headers
-- Use a safe templating method for headers
-- Validate usernames to reject control characters
-

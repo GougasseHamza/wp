@@ -121,6 +121,28 @@ nav:
     - Trust me I'm authenticated: hackday2026/index.md
     - As Small As Possible: hackday2026/crypto.md
     - Matrix Challenge — Steganography: hackday2026/matrix.md
+  - 0xFun CTF:
+    - Overview: 0xfun/index.md
+    - SwitchCaseAdvocate: 0xfun/switchcaseadvocate.md
+    - Fortune Teller: 0xfun/fortune-teller.md
+  - BITSCTF:
+    - Overview: bits/index.md
+    - Too Genus Curve: bits/too-genus-curve.md
+    - SaveMeFromThisHell — AES: bits/savemefromthishell-aes.md
+  - Hackena CTF:
+    - Overview: hackena/index.md
+    - LWE Lattice: hackena/lwe-lattice.md
+    - smol-web-player: hackena/smol-web-player.md
+  - Nullcon CTF:
+    - Overview: nullconctf/index.md
+    - CatBoard: nullconctf/catboard.md
+  - LA CTF:
+    - Overview: lactf/index.md
+    - Append Note: lactf/append-note.md
+    - Bobles and Narnes: lactf/bobles-and-narnes.md
+  - UofTCTF:
+    - Overview: uofctf/index.md
+    - Lottery Challenge: uofctf/misc.md
   - About: about.md
 
 copyright: Copyright &copy; 2024-2026 GougasseHamza
