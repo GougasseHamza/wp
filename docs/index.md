@@ -5,6 +5,8 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
 ## Categories
 
+[Browse by tags](tags.md) for quick filtering by Web/Crypto/Misc.
+
 ### ASIS CTF
 
 <div class="grid cards" markdown>

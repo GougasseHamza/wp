@@ -1,4 +1,12 @@
+---
+tags:
+  - crypto
+  - bitsctf
+---
+
 # SaveMeFromThisHell — AES (custom) Writeup + Solvers
+
+**Category:** Crypto
 
 ## What I Was Given
 

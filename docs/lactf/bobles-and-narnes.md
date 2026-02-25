@@ -1,4 +1,12 @@
+---
+tags:
+  - web
+  - lactf
+---
+
 # Bobles and Narnes - First-Person Writeup
+
+**Category:** Web
 
 ## Challenge Overview
 

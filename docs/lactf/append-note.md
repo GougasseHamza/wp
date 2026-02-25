@@ -1,4 +1,12 @@
-## Append Note - LA CTF Web Challenge Writeup
+---
+tags:
+  - web
+  - lactf
+---
+
+# Append Note - LA CTF Web Challenge Writeup
+
+**Category:** Web
 
 ### First Impressions
 

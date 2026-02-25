@@ -1,3 +1,9 @@
+---
+tags:
+  - web
+  - asis-ctf
+---
+
 # ASIS Mail - Chaining Vulnerabilities
 
 **Category:** Web
@@ -166,4 +172,3 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-

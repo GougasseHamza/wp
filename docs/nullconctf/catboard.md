@@ -1,4 +1,12 @@
+---
+tags:
+  - web
+  - nullconctf
+---
+
 # CatBoard — CTF Web Challenge Writeup
+
+**Category:** Web
 
 ## Challenge Overview
 

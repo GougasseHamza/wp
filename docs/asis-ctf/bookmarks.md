@@ -1,3 +1,9 @@
+---
+tags:
+  - web
+  - asis-ctf
+---
+
 # Bookmarks - Breaking CSP with CRLF
 
 **Category:** Web Exploitation
@@ -172,4 +178,3 @@ After a few seconds, I saw the callback with the flag:
 [>] Fetching dashboard
 [>] FLAG:FLAG{...}
 ```
-

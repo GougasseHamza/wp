@@ -1,3 +1,9 @@
+---
+tags:
+  - web
+  - asis-ctf
+---
+
 # Sanchess - Making Rick Angry
 
 **Category:** Web Exploitation

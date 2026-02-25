@@ -1,4 +1,12 @@
+---
+tags:
+  - web
+  - hackena
+---
+
 # smol-web-player — CTF Writeup
+
+**Category:** Web
 
 ## Challenge Overview
 

@@ -1,5 +1,12 @@
+---
+tags:
+  - crypto
+  - 0xfun
+---
+
 # Fortune Teller - LCG Truncated Output Attack
 
+**Category:** Crypto
 **Flag:** `0xfun{trunc4t3d_lcg_f4lls_t0_lll}`
 
 ## Challenge

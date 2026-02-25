@@ -1,4 +1,12 @@
+---
+tags:
+  - crypto
+  - bitsctf
+---
+
 # BITSCTF Crypto Writeup (First-Person) - Too Genus Curve
+
+**Category:** Crypto
 
 I solved this challenge by turning the genus-2 Jacobian discrete log into two elliptic-curve discrete logs, then using the recovered scalar to decrypt the flag ciphertext.
 
@@ -442,4 +450,3 @@ When I ran the script, it printed:
 
 - `secret used = 91527621348541142496688581834442276703691715094599257862319082414424378704170`
 - `flag = BITSCTF{7h15_15_w4y_2_63nu5_6n6}`
-

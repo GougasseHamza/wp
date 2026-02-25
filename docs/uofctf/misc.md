@@ -1,3 +1,10 @@
+---
+tags:
+  - pwn
+  - jail
+  - uoftctf
+---
+
 # Writeup: UofTCTF Lottery Challenge
 
 **Category:** Pwn / Jail

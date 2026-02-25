@@ -1,4 +1,12 @@
+---
+tags:
+  - web
+  - hackday2026
+---
+
 # Trust me I'm authenticated — HackDay 2026
+
+**Category:** Web
 
 ## Background
 

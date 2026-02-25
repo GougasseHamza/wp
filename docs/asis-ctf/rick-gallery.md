@@ -1,3 +1,9 @@
+---
+tags:
+  - web
+  - asis-ctf
+---
+
 # Rick Gallery - The Case Sensitivity Trap
 
 **Category:** Web

@@ -86,7 +86,8 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - tags
+  - tags:
+      tags_file: tags.md
 
 extra:
   social:
@@ -143,6 +144,7 @@ nav:
   - UofTCTF:
     - Overview: uofctf/index.md
     - Lottery Challenge: uofctf/misc.md
+  - Tags: tags.md
   - About: about.md
 
 copyright: Copyright &copy; 2024-2026 GougasseHamza

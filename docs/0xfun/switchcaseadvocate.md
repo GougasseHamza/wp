@@ -1,4 +1,12 @@
+---
+tags:
+  - crypto
+  - 0xfun
+---
+
 # SwitchCaseAdvocate (Fortune Teller's Revenge)
+
+**Category:** Crypto
 
 Target: `nc chall.0xfun.org 42891`
 
