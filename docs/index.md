@@ -21,11 +21,15 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Web
+
     [Writeup](asis-ctf/sanchess.md)
     
 -   **Rick Gallery**
 
     ---
+
+    Category: Web
 
     [Writeup](asis-ctf/rick-gallery.md)
 
@@ -33,11 +37,15 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Web
+
     [Writeup](asis-ctf/asis-mail.md)
 
 -   **Bookmarks**
 
     ---
+
+    Category: Web
 
     [Writeup](asis-ctf/bookmarks.md)
 
@@ -57,11 +65,15 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Crypto
+
     [Writeup](hackday2026/crypto.md)
 
 -   **Matrix Challenge — Steganography**
 
     ---
+
+    Category: Misc / Stego
 
     [Writeup](hackday2026/matrix.md)
 
@@ -81,11 +93,15 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Crypto
+
     [Writeup](0xfun/switchcaseadvocate.md)
 
 -   **Fortune Teller**
 
     ---
+
+    Category: Crypto
 
     [Writeup](0xfun/fortune-teller.md)
 
@@ -105,11 +121,15 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Crypto
+
     [Writeup](bits/too-genus-curve.md)
 
 -   **SaveMeFromThisHell — AES**
 
     ---
+
+    Category: Crypto
 
     [Writeup](bits/savemefromthishell-aes.md)
 
@@ -129,11 +149,15 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Crypto
+
     [Writeup](hackena/lwe-lattice.md)
 
 -   **smol-web-player**
 
     ---
+
+    Category: Web
 
     [Writeup](hackena/smol-web-player.md)
 
@@ -153,6 +177,8 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Web
+
     [Writeup](nullconctf/catboard.md)
 
 </div>
@@ -171,11 +197,15 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
+    Category: Web
+
     [Writeup](lactf/append-note.md)
 
 -   **Bobles and Narnes**
 
     ---
+
+    Category: Web
 
     [Writeup](lactf/bobles-and-narnes.md)
 
@@ -194,6 +224,8 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 -   **Lottery Challenge**
 
     ---
+
+    Category: Pwn / Jail
 
     [Writeup](uofctf/misc.md)
 
