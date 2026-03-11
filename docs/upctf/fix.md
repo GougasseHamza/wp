@@ -1,3 +1,9 @@
+---
+tags:
+  - web
+  - upctf
+---
+
 # fix - Writeup
 
 I solved this challenge by abusing the internal admin page as a cross-origin query gadget and then pivoting into Solr's `flag` collection through the unsafely concatenated search query.

@@ -1,3 +1,9 @@
+---
+tags:
+  - web
+  - uvt
+---
+
 # Cosmic Components Co. Writeup
 
 Target: `http://194.102.62.175:21783`

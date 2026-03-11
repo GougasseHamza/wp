@@ -97,6 +97,14 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     [Writeup](0xfun/switchcaseadvocate.md)
 
+-   **SkyPort Operations**
+
+    ---
+
+    Category: Web
+
+    [Writeup](0xfun/skyport-operations.md)
+
 -   **Fortune Teller**
 
     ---
@@ -152,6 +160,14 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
     Category: Crypto
 
     [Writeup](hackena/lwe-lattice.md)
+
+-   **Czechoslovakia**
+
+    ---
+
+    Category: Web
+
+    [Writeup](hackena/czechoslovakia.md)
 
 -   **smol-web-player**
 
@@ -228,5 +244,61 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
     Category: Pwn / Jail
 
     [Writeup](uofctf/misc.md)
+
+</div>
+
+### upCTF
+
+<div class="grid cards" markdown>
+
+-   **Overview**
+
+    ---
+
+    [Category](upctf/index.md)
+
+-   **fix**
+
+    ---
+
+    Category: Web
+
+    [Writeup](upctf/fix.md)
+
+-   **Crypto Writeup**
+
+    ---
+
+    Category: Crypto
+
+    [Writeup](upctf/crypto.md)
+
+</div>
+
+### UVT
+
+<div class="grid cards" markdown>
+
+-   **Overview**
+
+    ---
+
+    [Category](uvt/index.md)
+
+-   **Stellar Gateway**
+
+    ---
+
+    Category: Web
+
+    [Writeup](uvt/stellar-gateway.md)
+
+-   **Cosmic Components Co.**
+
+    ---
+
+    Category: Web
+
+    [Writeup](uvt/cosmic-components.md)
 
 </div>

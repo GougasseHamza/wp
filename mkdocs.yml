@@ -124,6 +124,7 @@ nav:
     - Matrix Challenge — Steganography: hackday2026/matrix.md
   - 0xFun CTF:
     - Overview: 0xfun/index.md
+    - SkyPort Operations: 0xfun/skyport-operations.md
     - SwitchCaseAdvocate: 0xfun/switchcaseadvocate.md
     - Fortune Teller: 0xfun/fortune-teller.md
   - BITSCTF:
@@ -132,6 +133,7 @@ nav:
     - SaveMeFromThisHell — AES: bits/savemefromthishell-aes.md
   - Hackena CTF:
     - Overview: hackena/index.md
+    - Czechoslovakia: hackena/czechoslovakia.md
     - LWE Lattice: hackena/lwe-lattice.md
     - smol-web-player: hackena/smol-web-player.md
   - Nullcon CTF:
@@ -144,6 +146,14 @@ nav:
   - UofTCTF:
     - Overview: uofctf/index.md
     - Lottery Challenge: uofctf/misc.md
+  - upCTF:
+    - Overview: upctf/index.md
+    - fix: upctf/fix.md
+    - Crypto Writeup: upctf/crypto.md
+  - UVT:
+    - Overview: uvt/index.md
+    - Stellar Gateway: uvt/stellar-gateway.md
+    - Cosmic Components Co.: uvt/cosmic-components.md
   - Tags: tags.md
   - About: about.md
 

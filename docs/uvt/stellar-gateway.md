@@ -1,3 +1,9 @@
+---
+tags:
+  - web
+  - uvt
+---
+
 # Stellar Gateway Writeup
 
 Target: `http://194.102.62.175:21135`

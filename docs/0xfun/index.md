@@ -1,3 +1,3 @@
 # 0xFun CTF
 
-These are the 0xFun crypto writeups I worked through.
+These are the 0xFun writeups I worked through.
