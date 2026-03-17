@@ -10,7 +10,7 @@ tags:
 ## Challenge Overview
 
 **Flag format:** `ENO{...}`  
-**Focus:** SSRF, Session Forgery, Werkzeug Debugger PIN Bypass
+**Category:** Web — SSRF, Session Forgery, Werkzeug Debugger PIN Bypass
 
 The challenge presents "CatBoard," a cat image gallery built with Flask. The source code (`app.py`) is provided but fully obfuscated — every Python keyword, identifier, and string literal has been replaced with variations of "meow" (`mew`, `meow`, `meoow`, `meeeow`, etc.).
 

@@ -10,7 +10,7 @@ Writeups focused mostly on web exploitation, with crypto, misc, and the occasion
 
     ---
 
-    Why I write these, how I approach challenges, and what kind of notes I keep.
+    A short intro about who I am and what this site is for.
 
     [Read the about page](about.md)
 
@@ -26,33 +26,25 @@ Writeups focused mostly on web exploitation, with crypto, misc, and the occasion
 
     ---
 
-    MidnightFlag CTF now includes BlackBank alongside the two Mineslayer writeups.
+    BlackBank is the latest MidnightFlag writeup.
 
-    [Explore MidnightFlag CTF](midnightctf/index.md)
+    [Read BlackBank](midnightctf/blackbank.md)
 
 </div>
 
 ## Browse By Event
 
-Each overview page groups a specific CTF, while the challenge cards below link straight to the writeup and to the relevant tags.
+Jump straight to the writeups from each event.
 
 ### MidnightFlag CTF
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Context for the event and links to the published MidnightFlag writeups.
-
-    [Open overview](midnightctf/index.md)
-
 -   **BlackBank**
 
     ---
 
-    Focus: Web / Crypto
+    Category: Web / Crypto
 
     [Read writeup](midnightctf/blackbank.md)
 
@@ -60,7 +52,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web / Misc / Pwn
+    Category: Web / Misc / Pwn
 
     [Read writeup](midnightctf/mineslayer.md)
 
@@ -68,7 +60,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web / Misc / Pwn
+    Category: Web / Misc / Pwn
 
     [Read writeup](midnightctf/mineslayer-flag2.md)
 
@@ -78,27 +70,19 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Notes and context for the ASIS set.
-
-    [Open overview](asis-ctf/index.md)
-
 -   **Sanchess**
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](asis-ctf/sanchess.md)
-    
+
 -   **Rick Gallery**
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](asis-ctf/rick-gallery.md)
 
@@ -106,7 +90,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](asis-ctf/asis-mail.md)
 
@@ -114,7 +98,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](asis-ctf/bookmarks.md)
 
@@ -124,19 +108,19 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
+-   **Trust me I'm authenticated**
 
     ---
 
-    Event notes and the web-heavy HackDay chain.
+    Category: Web
 
-    [Open overview](hackday2026/index.md)
+    [Read writeup](hackday2026/index.md)
 
 -   **As Small As Possible**
 
     ---
 
-    Focus: Crypto
+    Category: Crypto
 
     [Read writeup](hackday2026/crypto.md)
 
@@ -144,7 +128,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Misc / Stego
+    Category: Misc / Stego
 
     [Read writeup](hackday2026/matrix.md)
 
@@ -154,35 +138,27 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
+-   **SkyPort Operations**
 
     ---
 
-    Event overview and challenge summaries.
+    Category: Web
 
-    [Open overview](0xfun/index.md)
+    [Read writeup](0xfun/skyport-operations.md)
 
 -   **SwitchCaseAdvocate**
 
     ---
 
-    Focus: Crypto
+    Category: Crypto
 
     [Read writeup](0xfun/switchcaseadvocate.md)
-
--   **SkyPort Operations**
-
-    ---
-
-    Focus: Web
-
-    [Read writeup](0xfun/skyport-operations.md)
 
 -   **Fortune Teller**
 
     ---
 
-    Focus: Crypto
+    Category: Crypto
 
     [Read writeup](0xfun/fortune-teller.md)
 
@@ -192,19 +168,11 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Event overview and crypto notes.
-
-    [Open overview](bits/index.md)
-
 -   **Too Genus Curve**
 
     ---
 
-    Focus: Crypto
+    Category: Crypto
 
     [Read writeup](bits/too-genus-curve.md)
 
@@ -212,7 +180,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Crypto
+    Category: Crypto
 
     [Read writeup](bits/savemefromthishell-aes.md)
 
@@ -222,19 +190,11 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Event overview and challenge summaries.
-
-    [Open overview](hackena/index.md)
-
 -   **LWE Lattice**
 
     ---
 
-    Focus: Crypto
+    Category: Crypto
 
     [Read writeup](hackena/lwe-lattice.md)
 
@@ -242,7 +202,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](hackena/czechoslovakia.md)
 
@@ -250,7 +210,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](hackena/smol-web-player.md)
 
@@ -260,19 +220,11 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Event overview and the CatBoard chain.
-
-    [Open overview](nullconctf/index.md)
-
 -   **CatBoard**
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](nullconctf/catboard.md)
 
@@ -282,19 +234,11 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Event overview and LA CTF writeups.
-
-    [Open overview](lactf/index.md)
-
 -   **Append Note**
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](lactf/append-note.md)
 
@@ -302,7 +246,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](lactf/bobles-and-narnes.md)
 
@@ -312,19 +256,11 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Event overview and notes.
-
-    [Open overview](uofctf/index.md)
-
 -   **Lottery Challenge**
 
     ---
 
-    Focus: Pwn / Jail
+    Category: Pwn / Jail
 
     [Read writeup](uofctf/misc.md)
 
@@ -334,19 +270,11 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Event overview and challenge notes.
-
-    [Open overview](upctf/index.md)
-
 -   **fix**
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](upctf/fix.md)
 
@@ -354,7 +282,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Crypto
+    Category: Crypto
 
     [Read writeup](upctf/crypto.md)
 
@@ -364,19 +292,11 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
 <div class="grid cards" markdown>
 
--   **Overview**
-
-    ---
-
-    Event overview and challenge summaries.
-
-    [Open overview](uvt/index.md)
-
 -   **Stellar Gateway**
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](uvt/stellar-gateway.md)
 
@@ -384,7 +304,7 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Focus: Web
+    Category: Web
 
     [Read writeup](uvt/cosmic-components.md)
 
