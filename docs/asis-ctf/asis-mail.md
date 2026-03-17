@@ -6,7 +6,6 @@ tags:
 
 # ASIS Mail - Chaining Vulnerabilities
 
-**Category:** Web
 **Flag:** `ASIS{M4IL_4S_4_S3RVIC3_15UUUUUUE5_62ee9c3cc5029d4c}`
 
 ## The Application
@@ -117,7 +116,7 @@ import random
 import string
 import time
 
-BASE_URL = "http://91.107.143.167:8081"
+BASE_URL = "http://challenge.local"
 FLAG_FILENAME = "flag-0750c96cfc2bd4b665865da15e9d5b94.txt"
 
 def random_string(length=8):

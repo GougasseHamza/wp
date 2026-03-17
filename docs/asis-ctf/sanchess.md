@@ -6,7 +6,6 @@ tags:
 
 # Sanchess - Making Rick Angry
 
-**Category:** Web Exploitation
 **Flag:** `ASIS{y0u_M2D3_r!cK_@NGRY}`
 
 ## First Impressions
@@ -181,7 +180,7 @@ import requests
 import string
 import time
 
-BASE_URL = "http://65.109.194.105:9090"
+BASE_URL = "http://challenge.local"
 SESSION = requests.Session()
 
 def test_expr(expr, distance=8):
@@ -258,7 +257,7 @@ if __name__ == "__main__":
 import requests
 import sys
 
-BASE_URL = "http://65.109.194.105:9090/"
+BASE_URL = "http://challenge.local/"
 SESSION = requests.Session()
 
 def to_fullwidth(s):

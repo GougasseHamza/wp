@@ -6,7 +6,6 @@ tags:
 
 # Rick Gallery - The Case Sensitivity Trap
 
-**Category:** Web
 **Flag:** `ASIS{...}`
 
 ## The Gallery
@@ -49,7 +48,7 @@ I started with a simple test. I sent a POST request with the `Image` header set 
 import requests
 import base64
 
-TARGET = "http://65.109.194.105:8080/index.php"
+TARGET = "http://challenge.local/index.php"
 
 headers = {"Image": "/etc/hostname"}
 r = requests.post(TARGET, headers=headers)

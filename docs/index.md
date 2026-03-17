@@ -1,11 +1,70 @@
 # CTF Writeups
 
-Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT) and to share with everyone.
+Writeups focused mostly on web exploitation, with crypto, misc, and the occasional pwn-heavy rabbit hole mixed in.
 
+## Start Here
 
-## Categories
+<div class="grid cards" markdown>
 
-[Browse by tags](tags.md) for quick filtering by Web/Crypto/Misc.
+-   **About**
+
+    ---
+
+    Why I write these, how I approach challenges, and what kind of notes I keep.
+
+    [Read the about page](about.md)
+
+-   **Browse by tags**
+
+    ---
+
+    Jump straight into web, crypto, misc, pwn, or event-specific writeups.
+
+    [Open the tags page](tags.md)
+
+-   **Latest addition**
+
+    ---
+
+    MidnightFlag CTF now has a dedicated section with both the initial Mineslayer chain and the full Flag 2 follow-up.
+
+    [Explore MidnightFlag CTF](midnightctf/index.md)
+
+</div>
+
+## Browse By Event
+
+Each overview page groups a specific CTF, while the challenge cards below link straight to the writeup and to the relevant tags.
+
+### MidnightFlag CTF
+
+<div class="grid cards" markdown>
+
+-   **Overview**
+
+    ---
+
+    Context for the event and links to the Mineslayer writeups.
+
+    [Open overview](midnightctf/index.md)
+
+-   **Mineslayer**
+
+    ---
+
+    Focus: Web / Misc / Pwn
+
+    [Read writeup](midnightctf/mineslayer.md)
+
+-   **Mineslayer — Flag 2**
+
+    ---
+
+    Focus: Web / Misc / Pwn
+
+    [Read writeup](midnightctf/mineslayer-flag2.md)
+
+</div>
 
 ### ASIS CTF
 
@@ -15,39 +74,41 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](asis-ctf/index.md)
+    Notes and context for the ASIS set.
+
+    [Open overview](asis-ctf/index.md)
 
 -   **Sanchess**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](asis-ctf/sanchess.md)
+    [Read writeup](asis-ctf/sanchess.md)
     
 -   **Rick Gallery**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](asis-ctf/rick-gallery.md)
+    [Read writeup](asis-ctf/rick-gallery.md)
 
 -   **ASIS Mail**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](asis-ctf/asis-mail.md)
+    [Read writeup](asis-ctf/asis-mail.md)
 
 -   **Bookmarks**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](asis-ctf/bookmarks.md)
+    [Read writeup](asis-ctf/bookmarks.md)
 
 </div>
 
@@ -59,23 +120,25 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](hackday2026/index.md)
+    Event notes and the web-heavy HackDay chain.
+
+    [Open overview](hackday2026/index.md)
 
 -   **As Small As Possible**
 
     ---
 
-    Category: Crypto
+    Focus: Crypto
 
-    [Writeup](hackday2026/crypto.md)
+    [Read writeup](hackday2026/crypto.md)
 
 -   **Matrix Challenge — Steganography**
 
     ---
 
-    Category: Misc / Stego
+    Focus: Misc / Stego
 
-    [Writeup](hackday2026/matrix.md)
+    [Read writeup](hackday2026/matrix.md)
 
 </div>
 
@@ -87,31 +150,33 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](0xfun/index.md)
+    Event overview and challenge summaries.
+
+    [Open overview](0xfun/index.md)
 
 -   **SwitchCaseAdvocate**
 
     ---
 
-    Category: Crypto
+    Focus: Crypto
 
-    [Writeup](0xfun/switchcaseadvocate.md)
+    [Read writeup](0xfun/switchcaseadvocate.md)
 
 -   **SkyPort Operations**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](0xfun/skyport-operations.md)
+    [Read writeup](0xfun/skyport-operations.md)
 
 -   **Fortune Teller**
 
     ---
 
-    Category: Crypto
+    Focus: Crypto
 
-    [Writeup](0xfun/fortune-teller.md)
+    [Read writeup](0xfun/fortune-teller.md)
 
 </div>
 
@@ -123,23 +188,25 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](bits/index.md)
+    Event overview and crypto notes.
+
+    [Open overview](bits/index.md)
 
 -   **Too Genus Curve**
 
     ---
 
-    Category: Crypto
+    Focus: Crypto
 
-    [Writeup](bits/too-genus-curve.md)
+    [Read writeup](bits/too-genus-curve.md)
 
 -   **SaveMeFromThisHell — AES**
 
     ---
 
-    Category: Crypto
+    Focus: Crypto
 
-    [Writeup](bits/savemefromthishell-aes.md)
+    [Read writeup](bits/savemefromthishell-aes.md)
 
 </div>
 
@@ -151,31 +218,33 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](hackena/index.md)
+    Event overview and challenge summaries.
+
+    [Open overview](hackena/index.md)
 
 -   **LWE Lattice**
 
     ---
 
-    Category: Crypto
+    Focus: Crypto
 
-    [Writeup](hackena/lwe-lattice.md)
+    [Read writeup](hackena/lwe-lattice.md)
 
 -   **Czechoslovakia**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](hackena/czechoslovakia.md)
+    [Read writeup](hackena/czechoslovakia.md)
 
 -   **smol-web-player**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](hackena/smol-web-player.md)
+    [Read writeup](hackena/smol-web-player.md)
 
 </div>
 
@@ -187,15 +256,17 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](nullconctf/index.md)
+    Event overview and the CatBoard chain.
+
+    [Open overview](nullconctf/index.md)
 
 -   **CatBoard**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](nullconctf/catboard.md)
+    [Read writeup](nullconctf/catboard.md)
 
 </div>
 
@@ -207,23 +278,25 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](lactf/index.md)
+    Event overview and LA CTF writeups.
+
+    [Open overview](lactf/index.md)
 
 -   **Append Note**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](lactf/append-note.md)
+    [Read writeup](lactf/append-note.md)
 
 -   **Bobles and Narnes**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](lactf/bobles-and-narnes.md)
+    [Read writeup](lactf/bobles-and-narnes.md)
 
 </div>
 
@@ -235,15 +308,17 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](uofctf/index.md)
+    Event overview and notes.
+
+    [Open overview](uofctf/index.md)
 
 -   **Lottery Challenge**
 
     ---
 
-    Category: Pwn / Jail
+    Focus: Pwn / Jail
 
-    [Writeup](uofctf/misc.md)
+    [Read writeup](uofctf/misc.md)
 
 </div>
 
@@ -255,23 +330,25 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](upctf/index.md)
+    Event overview and challenge notes.
+
+    [Open overview](upctf/index.md)
 
 -   **fix**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](upctf/fix.md)
+    [Read writeup](upctf/fix.md)
 
 -   **Crypto Writeup**
 
     ---
 
-    Category: Crypto
+    Focus: Crypto
 
-    [Writeup](upctf/crypto.md)
+    [Read writeup](upctf/crypto.md)
 
 </div>
 
@@ -283,22 +360,24 @@ Personal blog to keep track of the past CTF challs  ( web + some crypto / OSINT)
 
     ---
 
-    [Category](uvt/index.md)
+    Event overview and challenge summaries.
+
+    [Open overview](uvt/index.md)
 
 -   **Stellar Gateway**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](uvt/stellar-gateway.md)
+    [Read writeup](uvt/stellar-gateway.md)
 
 -   **Cosmic Components Co.**
 
     ---
 
-    Category: Web
+    Focus: Web
 
-    [Writeup](uvt/cosmic-components.md)
+    [Read writeup](uvt/cosmic-components.md)
 
 </div>

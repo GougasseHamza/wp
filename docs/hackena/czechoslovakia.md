@@ -104,7 +104,7 @@ The bot responded with success, visited my URL, executed my payload, and made a 
 
 ## 6. I Automated It
 
-I wrote `solve.py` to:
+I automated the final steps with a short script that:
 
 1. Create a webhook token
 2. Generate the payload
@@ -112,12 +112,6 @@ I wrote `solve.py` to:
 4. Poll webhook.site API
 5. Extract and print the flag
 
-Running:
-
-```bash
-python3 solve.py --wait 20
-```
-
-printed:
+After waiting for the bot visit and webhook callback, it printed:
 
 `Hackena{I_Mi5S3d_Czechoslovakia}`

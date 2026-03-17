@@ -6,7 +6,6 @@ tags:
 
 # Bobles and Narnes - First-Person Writeup
 
-**Category:** Web
 
 ## Challenge Overview
 
@@ -44,7 +43,7 @@ The exploit comes from a mismatch between:
 1. Price calculation using raw user JSON (`productsToAdd`) before insert.
 2. Bun SQL helper `db(cartEntries)` inferring insert columns from object keys.
 
-In `solve.py`, I exploited this by sending two objects in one `products` array:
+In my exploit script, I exploited this by sending two objects in one `products` array:
 
 1. First object: cheap book with **no** `is_sample` key.
 2. Second object: flag book with `is_sample: 1`.
@@ -65,7 +64,7 @@ I confirmed the challenge intentionally includes only `books/flag_sample.txt`, w
 
 ## Exploit Script
 
-I used the provided `solve.py`, which does:
+I used a short exploit script that:
 
 1. Registers a random user.
 2. Sends crafted `/cart/add` JSON with mixed keys.

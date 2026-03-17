@@ -6,8 +6,6 @@ tags:
 
 # Stellar Gateway Writeup
 
-Target: `http://194.102.62.175:21135`
-
 Flag:
 
 ```text
@@ -81,27 +79,13 @@ Sign it with `HS256` using the empty key `b""`.
 
 Then send it as the `session` cookie to `/flag`.
 
-## Solver
+## Automation
 
-Solver file used locally: `solve_stellar_gateway.py`
+I used a short script to:
 
-Usage:
-
-```bash
-python3 solve_stellar_gateway.py
-```
-
-If you also want the forged JWT:
-
-```bash
-python3 solve_stellar_gateway.py --show-token
-```
-
-If the service is offline and you only want the forged token:
-
-```bash
-python3 solve_stellar_gateway.py --token-only
-```
+- log in with the visible credentials and capture the JWT structure
+- forge a replacement token with `kid=../../../dev/null`
+- either print the forged JWT or send it straight to `/flag`
 
 ## Notes
 

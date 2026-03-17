@@ -1,6 +1,5 @@
 site_name: CTF Writeups
 site_description: Collection of Capture The Flag challenge writeups and security research
-site_author: GougasseHamza
 site_url: https://GougasseHamza.github.io/wp/
 
 repo_name: GougasseHamza/writeups
@@ -112,6 +111,10 @@ extra_css:
 
 nav:
   - Home: index.md
+  - MidnightFlag CTF:
+    - Overview: midnightctf/index.md
+    - Mineslayer: midnightctf/mineslayer.md
+    - Mineslayer — Flag 2: midnightctf/mineslayer-flag2.md
   - ASIS CTF:
     - Overview: asis-ctf/index.md
     - Sanchess: asis-ctf/sanchess.md

@@ -6,7 +6,6 @@ tags:
 
 # smol-web-player — CTF Writeup
 
-**Category:** Web
 
 ## Challenge Overview
 
@@ -231,7 +230,7 @@ const origin = 'http://web:5000/';
 await page.goto(origin + uri, { waitUntil: 'networkidle2' });
 ```
 
-The bot's Docker container has a private network IP (e.g., `172.18.0.3`). When the XSS-injected form submits to `/search`, the request originates from this private IP, which passes the `is_private` check in `@localhost_only`.
+The bot's Docker container has a private network IP (for example `172.x.x.x`). When the XSS-injected form submits to `/search`, the request originates from this private IP, which passes the `is_private` check in `@localhost_only`.
 
 I triggered the bot via the `/report` endpoint:
 
@@ -337,7 +336,7 @@ This runs `/readflagbinary` for each file in `./uploads`, printing the flag to s
 #!/usr/bin/env python3
 import requests, sys, re, urllib.parse
 
-TARGET = sys.argv[1] if len(sys.argv) > 1 else "http://localhost:5000"
+TARGET = sys.argv[1] if len(sys.argv) > 1 else "http://challenge.local"
 
 # ── FLAG 1: Direct SQLi ─────────────────────────────────────
 r = requests.get(f"{TARGET}/ratings", params={"quantity": "7"})

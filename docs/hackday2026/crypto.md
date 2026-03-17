@@ -6,7 +6,6 @@ tags:
 
 # As Small As Possible (DH + AES-GCM)
 
-**Category:** Crypto
 
 ## TL;DR
 - The server accepts **arbitrary Diffie–Hellman public keys** without subgroup checks, so I could force Alice’s shared secret into tiny factors of `p-1`.

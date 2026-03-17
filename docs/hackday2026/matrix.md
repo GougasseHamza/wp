@@ -7,7 +7,6 @@ tags:
 
 # Matrix Challenge — Steganography
 
-**Category:** Misc / Steganography
 
 ## Challenge summary
 - Image: The Matrix “bullet time” scene with a cyan waveform overlay and a SHA1 of `4bbab076a0aa488761cd216a82bf4e508a2953ab` to verify the file.

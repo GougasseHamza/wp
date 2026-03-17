@@ -299,7 +299,7 @@ For each round:
 7. Send `Stop`.
 8. Send `x`.
 
-I automated the whole thing in `remote_solve.py`.
+I automated the whole thing in a small remote solver.
 
 ## Complexity
 
@@ -322,11 +322,7 @@ I compiled the searcher like this:
 g++ -O3 -march=native relation_search.cpp -lcrypto -o relation_search
 ```
 
-Then the full remote solve was:
-
-```bash
-python3 remote_solve.py 46.225.117.62 30013
-```
+Then I ran the remote solver against the service.
 
 ## Solver 1: relation_search.cpp
 
@@ -670,7 +666,7 @@ if __name__ == "__main__":
     raise SystemExit(main())
 ```
 
-## Solver 3: remote_solve.py
+## Solver 3: Remote solver
 
 This is the full remote solver that ties everything together.
 

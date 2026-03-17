@@ -6,7 +6,6 @@ tags:
 
 # BITSCTF Crypto Writeup (First-Person) - Too Genus Curve
 
-**Category:** Crypto
 
 I solved this challenge by turning the genus-2 Jacobian discrete log into two elliptic-curve discrete logs, then using the recovered scalar to decrypt the flag ciphertext.
 

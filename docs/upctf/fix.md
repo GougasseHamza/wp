@@ -70,7 +70,7 @@ Relevant file:
 That meant I could inject extra Solr parameters inside `q`, for example:
 
 ```text
-*:*&shards=172.22.0.2:8983/solr/flag&fl=flag
+*:*&shards=<internal-solr>:8983/solr/flag&fl=flag
 ```
 
 ### 4. Solr exposed the shard address through `shards.info=true`

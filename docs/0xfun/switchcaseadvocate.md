@@ -6,9 +6,6 @@ tags:
 
 # SwitchCaseAdvocate (Fortune Teller's Revenge)
 
-**Category:** Crypto
-
-Target: `nc chall.0xfun.org 42891`
 
 I observed the service print three 32-bit "glimpses" (the upper 32 bits) of a 64-bit RNG state, with a large "jump across time" between glimpses, then ask for the next 5 full 64-bit states.
 

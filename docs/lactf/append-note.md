@@ -6,7 +6,6 @@ tags:
 
 # Append Note - LA CTF Web Challenge Writeup
 
-**Category:** Web
 
 ### First Impressions
 
@@ -45,7 +44,7 @@ Two things jumped out at me here:
 
 2. Python's `urlparse` does some interesting stuff with hostnames. I knew it strips tabs, newlines, and carriage returns from hostnames, but I had a hunch it might preserve **spaces**.
 
-I wrote a quick fuzzer (`fuzz_xss.py`) to test a bunch of payloads against the local instance. Tried tabs, newlines, various HTML tags - most got stripped by `urlparse`. But then I tried spaces in the hostname and there it was. `urlparse` leaves spaces alone, so something like:
+I used a quick local fuzzer to test a bunch of payloads against the local instance. Tried tabs, newlines, various HTML tags - most got stripped by `urlparse`. But then I tried spaces in the hostname and there it was. `urlparse` leaves spaces alone, so something like:
 
 ```
 http://<svg onload=alert(1)>.fake/

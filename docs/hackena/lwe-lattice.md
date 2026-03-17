@@ -6,7 +6,6 @@ tags:
 
 # Hackena CTF - LWE Lattice Challenge Writeup
 
-**Category:** Crypto
 
 ## Challenge Overview
 

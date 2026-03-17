@@ -6,8 +6,6 @@ tags:
 
 # Cosmic Components Co. Writeup
 
-Target: `http://194.102.62.175:21783`
-
 Flag:
 
 ```text
@@ -177,17 +175,9 @@ Result:
 
 Open `/flag`.
 
-## Solver
+## Automation
 
-Solver file used locally: `solve_cosmic_components.py`
-
-Usage:
-
-```bash
-python3 solve_cosmic_components.py
-```
-
-The solver:
+I used a short script that:
 
 - registers a fresh random account
 - climbs the tiers automatically

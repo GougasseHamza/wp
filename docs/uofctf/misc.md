@@ -7,7 +7,6 @@ tags:
 
 # Writeup: UofTCTF Lottery Challenge
 
-**Category:** Pwn / Jail
 
 **Difficulty:** Medium-Hard
 
