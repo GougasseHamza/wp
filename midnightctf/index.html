@@ -16,7 +16,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="mineslayer/">
+        <link rel="next" href="blackbank/">
       
       
         
@@ -730,6 +730,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blackbank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BlackBank
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2427,21 +2455,14 @@
       
       
       
+        <a href="../tags/#tag:crypto" class="md-tag">crypto</a>
+      
+    
+      
+      
+      
+      
         <a href="../tags/#tag:midnightctf" class="md-tag">midnightctf</a>
-      
-    
-      
-      
-      
-      
-        <a href="../tags/#tag:misc" class="md-tag">misc</a>
-      
-    
-      
-      
-      
-      
-        <a href="../tags/#tag:pwn" class="md-tag">pwn</a>
       
     
       
@@ -2472,21 +2493,23 @@
 
 
 <h1 id="midnightflag-ctf">MidnightFlag CTF<a class="headerlink" href="#midnightflag-ctf" title="Permanent link">&para;</a></h1>
-<p>MidnightFlag CTF had one challenge that was worth documenting twice: once for the initial account-takeover path, and once for the full follow-up chain that pushed the Node bot all the way to root-level flag retrieval.</p>
+<p>MidnightFlag CTF currently has two published challenge lines here: BlackBank, and the two-part Mineslayer writeup set.</p>
 <h2 id="what-i-published">What I published<a class="headerlink" href="#what-i-published" title="Permanent link">&para;</a></h2>
 <ul>
+<li><a href="blackbank/">BlackBank</a> covers the bank login SQLi, the weak <code>Math.random()</code>-based 2FA flow, and the V8 state-recovery path that predicts the boss account's next code.</li>
 <li><a href="mineslayer/">Mineslayer</a> covers the original solve path, the nick-formatting bug, the predictable password reset flow, and the first flag.</li>
 <li><a href="mineslayer-flag2/">Mineslayer — Flag 2</a> covers the full <code>/bot</code> JSON injection and prototype-pollution chain that led to <code>/getflag</code>.</li>
 </ul>
 <h2 id="main-themes">Main themes<a class="headerlink" href="#main-themes" title="Permanent link">&para;</a></h2>
 <ul>
+<li>predictable 2FA</li>
+<li>V8 <code>Math.random()</code> state recovery</li>
 <li>chat rendering and parsing mismatches</li>
 <li>privileged bot abuse</li>
 <li>predictable password generation</li>
 <li>JSON injection into a bot config</li>
 <li>prototype pollution reaching a code-generation gadget</li>
 </ul>
-<p>The two pages are separate because the second one is really a follow-up exploitation writeup, not just an appendix.</p>
 
 
 
@@ -2594,13 +2617,13 @@
         
         
           
-          <a href="mineslayer/" class="md-footer__link md-footer__link--next" aria-label="Next: Mineslayer">
+          <a href="blackbank/" class="md-footer__link md-footer__link--next" aria-label="Next: BlackBank">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mineslayer
+                BlackBank
               </div>
             </div>
             <div class="md-footer__button md-icon">
