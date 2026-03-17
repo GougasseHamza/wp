@@ -113,6 +113,7 @@ nav:
   - Home: index.md
   - MidnightFlag CTF:
     - Overview: midnightctf/index.md
+    - BlackBank: midnightctf/blackbank.md
     - Mineslayer: midnightctf/mineslayer.md
     - Mineslayer — Flag 2: midnightctf/mineslayer-flag2.md
   - ASIS CTF:

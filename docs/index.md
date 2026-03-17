@@ -26,7 +26,7 @@ Writeups focused mostly on web exploitation, with crypto, misc, and the occasion
 
     ---
 
-    MidnightFlag CTF now has a dedicated section with both the initial Mineslayer chain and the full Flag 2 follow-up.
+    MidnightFlag CTF now includes BlackBank alongside the two Mineslayer writeups.
 
     [Explore MidnightFlag CTF](midnightctf/index.md)
 
@@ -44,9 +44,17 @@ Each overview page groups a specific CTF, while the challenge cards below link s
 
     ---
 
-    Context for the event and links to the Mineslayer writeups.
+    Context for the event and links to the published MidnightFlag writeups.
 
     [Open overview](midnightctf/index.md)
+
+-   **BlackBank**
+
+    ---
+
+    Focus: Web / Crypto
+
+    [Read writeup](midnightctf/blackbank.md)
 
 -   **Mineslayer**
 
