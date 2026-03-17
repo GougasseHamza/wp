@@ -727,10 +727,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-why-the-obvious-2fa-bypasses-failed" class="md-nav__link">
+  <a href="#step-2-everything-i-tried-on-the-web-app-first" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Why the obvious 2FA bypasses failed
+        Step 2: Everything I tried on the web app first
       
     </span>
   </a>
@@ -738,10 +738,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-the-real-bug-was-v8-mathrandom" class="md-nav__link">
+  <a href="#step-3-why-express-led-me-to-v8-mathrandom" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: The real bug was V8 Math.random()
+        Step 3: Why Express led me to V8 Math.random()
       
     </span>
   </a>
@@ -2232,10 +2232,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-why-the-obvious-2fa-bypasses-failed" class="md-nav__link">
+  <a href="#step-2-everything-i-tried-on-the-web-app-first" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Why the obvious 2FA bypasses failed
+        Step 2: Everything I tried on the web app first
       
     </span>
   </a>
@@ -2243,10 +2243,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-the-real-bug-was-v8-mathrandom" class="md-nav__link">
+  <a href="#step-3-why-express-led-me-to-v8-mathrandom" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: The real bug was V8 Math.random()
+        Step 3: Why Express led me to V8 Math.random()
       
     </span>
   </a>
@@ -2370,10 +2370,17 @@
 <p><strong>Flag:</strong> <code>MCTF{v8_1s_n0t_SEcur3_4t_4l7}</code></p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>BlackBank exposed two related apps: a bank panel and a matching mail system. The challenge gave me access to a low-level member account, but the flag only appeared on the boss account's dashboard.</p>
-<p>The winning chain was:</p>
+<p>What made this challenge interesting is that I did not get the solve by chaining normal web bugs all the way through. I spent a long time trying to break the application layer first, got nowhere, stepped away, and came back with a different question:</p>
+<blockquote>
+<p>if I cannot force the app to skip 2FA, can I predict the next 2FA code instead?</p>
+</blockquote>
+<p>That turned out to be the real path.</p>
+<p>The final chain was:</p>
 <ol>
 <li>exploit SQL injection in the bank login</li>
 <li>extract the boss credentials and 2FA mail routing</li>
+<li>fail to land any practical web-app-side 2FA bypass</li>
+<li>notice the stack is Express, so the randomness is likely coming from Node and V8</li>
 <li>collect enough 2FA codes from my own account</li>
 <li>recover the V8 <code>Math.random()</code> state</li>
 <li>predict the next boss 2FA code and log in as <code>Vladizlow</code></li>
@@ -2413,19 +2420,32 @@
 </tbody>
 </table>
 <p>That immediately explained why the challenge was not solved after dumping the password. <code>Vladizlow</code> did not receive 2FA codes in the same mailbox as the low-privilege account.</p>
-<h2 id="step-2-why-the-obvious-2fa-bypasses-failed">Step 2: Why the obvious 2FA bypasses failed<a class="headerlink" href="#step-2-why-the-obvious-2fa-bypasses-failed" title="Permanent link">&para;</a></h2>
-<p>I tried the usual shortcuts first:</p>
+<h2 id="step-2-everything-i-tried-on-the-web-app-first">Step 2: Everything I tried on the web app first<a class="headerlink" href="#step-2-everything-i-tried-on-the-web-app-first" title="Permanent link">&para;</a></h2>
+<p>After getting <code>Vladizlow</code>'s password, I assumed the rest of the solve would still be in the web layer. I tried basically every angle that looked remotely plausible:</p>
 <ul>
-<li>changing <code>emailUser</code> through the login injection</li>
-<li>reusing a verified session and swapping users afterward</li>
-<li>tampering with <code>/bank/2fa</code>, <code>/bank/resend</code>, and <code>/bank/profile</code></li>
-<li>brute-forcing the numeric code</li>
-<li>guessing the <code>admin</code> mail credentials</li>
+<li>broken access control on the bank and mail routes</li>
+<li>response manipulation and parameter tampering around <code>/bank/2fa</code>, <code>/bank/resend</code>, and <code>/bank/profile</code></li>
+<li>IDOR-style pivots around anything user-linked in bank or mail flows</li>
+<li>race conditions during login, resend, and 2FA verification</li>
+<li>second-order SQLi ideas, especially anything that might poison <code>emailUser</code> or change where the code was delivered</li>
+<li>session confusion, like validating one user then swapping to another</li>
+<li>brute-forcing the admin mailbox and other obvious credential guesses</li>
 </ul>
-<p>None of those landed. The important clue was the format of the codes themselves: they looked exactly like values generated with:</p>
+<p>None of it worked.</p>
+<p>That was the turning point. I had real credentials for the boss account, but the web app would not give me the second factor no matter how I poked at it. So I stopped asking "how do I bypass this page?" and started asking "how is this code generated?"</p>
+<p>The first clue was the stack. The app looked like Express, which strongly suggested Node.js on the backend. Once I was thinking in Node terms, the next thought was obvious: if they used weak randomness for the 2FA code, then that randomness probably comes from V8.</p>
+<p>The second clue was the shape of the codes themselves. They looked exactly like:</p>
 <div class="language-javascript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">100000000</span><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="step-3-the-real-bug-was-v8-mathrandom">Step 3: The real bug was V8 <code>Math.random()</code><a class="headerlink" href="#step-3-the-real-bug-was-v8-mathrandom" title="Permanent link">&para;</a></h2>
+<p>That was the moment the challenge stopped looking like a pure web exploit and started looking like a runtime / PRNG problem.</p>
+<h2 id="step-3-why-express-led-me-to-v8-mathrandom">Step 3: Why Express led me to V8 <code>Math.random()</code><a class="headerlink" href="#step-3-why-express-led-me-to-v8-mathrandom" title="Permanent link">&para;</a></h2>
+<p>Express meant Node, and Node meant V8. If the developer had used the lazy option for code generation, there was a good chance the 2FA values came from <code>Math.random()</code> rather than a cryptographic API like <code>crypto.randomInt()</code>.</p>
+<p>Once I started treating the 2FA code as a PRNG output instead of a web token, the rest of the path made sense:</p>
+<ul>
+<li>I could generate more codes for my own account with <code>/bank/resend</code></li>
+<li>those codes gave me observations from the same backend RNG</li>
+<li>if the implementation was really V8 <code>Math.random()</code>, then I could try recovering the generator state and predicting the next output for <code>Vladizlow</code></li>
+</ul>
 <p>Node's <code>Math.random()</code> is powered by V8's xorshift128+ generator. For performance, V8 fills a 64-value cache and serves the numbers in LIFO order, which means the observed outputs have to be reversed before feeding them into a forward solver.</p>
 <p>That mattered for two reasons:</p>
 <ul>
@@ -2498,6 +2518,9 @@
 <ol>
 <li>Use SQLi on <code>/bank/login</code> to dump the <code>users</code> table.</li>
 <li>Recover <code>Vladizlow</code>'s password and the fact that his codes are routed to the <code>admin</code> mailbox.</li>
+<li>Try the normal web-app routes first: BAC, response manipulation, IDOR ideas, race conditions, second-order SQLi, and admin brute-force.</li>
+<li>Conclude that the app layer is not giving a practical bypass.</li>
+<li>Notice the backend is Express, infer Node/V8, and pivot to the RNG behind the 2FA codes.</li>
 <li>Log in as <code>katarina</code> and collect consecutive 2FA codes from one bank session.</li>
 <li>Recover the V8 xorshift128+ state from those observed codes.</li>
 <li>Predict the next valid boss 2FA code.</li>
@@ -2507,7 +2530,7 @@
 <ul>
 <li><code>Math.random()</code> should never be used for authentication or 2FA.</li>
 <li>Output caching details matter just as much as the PRNG itself when you are modeling a real implementation.</li>
-<li>SQL injection was only the first half of the challenge; the decisive step was turning leaked credentials into a predictable 2FA bypass.</li>
+<li>SQLi only got me to the interesting part. The actual solve came from recognizing that the web app was not budging and shifting the attack to the runtime's randomness instead.</li>
 </ul>
 
 

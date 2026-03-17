@@ -13,13 +13,21 @@ tags:
 
 BlackBank exposed two related apps: a bank panel and a matching mail system. The challenge gave me access to a low-level member account, but the flag only appeared on the boss account's dashboard.
 
-The winning chain was:
+What made this challenge interesting is that I did not get the solve by chaining normal web bugs all the way through. I spent a long time trying to break the application layer first, got nowhere, stepped away, and came back with a different question:
+
+> if I cannot force the app to skip 2FA, can I predict the next 2FA code instead?
+
+That turned out to be the real path.
+
+The final chain was:
 
 1. exploit SQL injection in the bank login
 2. extract the boss credentials and 2FA mail routing
-3. collect enough 2FA codes from my own account
-4. recover the V8 `Math.random()` state
-5. predict the next boss 2FA code and log in as `Vladizlow`
+3. fail to land any practical web-app-side 2FA bypass
+4. notice the stack is Express, so the randomness is likely coming from Node and V8
+5. collect enough 2FA codes from my own account
+6. recover the V8 `Math.random()` state
+7. predict the next boss 2FA code and log in as `Vladizlow`
 
 ## Step 1: Extract the boss credentials
 
@@ -43,23 +51,41 @@ The interesting rows were:
 
 That immediately explained why the challenge was not solved after dumping the password. `Vladizlow` did not receive 2FA codes in the same mailbox as the low-privilege account.
 
-## Step 2: Why the obvious 2FA bypasses failed
+## Step 2: Everything I tried on the web app first
 
-I tried the usual shortcuts first:
+After getting `Vladizlow`'s password, I assumed the rest of the solve would still be in the web layer. I tried basically every angle that looked remotely plausible:
 
-- changing `emailUser` through the login injection
-- reusing a verified session and swapping users afterward
-- tampering with `/bank/2fa`, `/bank/resend`, and `/bank/profile`
-- brute-forcing the numeric code
-- guessing the `admin` mail credentials
+- broken access control on the bank and mail routes
+- response manipulation and parameter tampering around `/bank/2fa`, `/bank/resend`, and `/bank/profile`
+- IDOR-style pivots around anything user-linked in bank or mail flows
+- race conditions during login, resend, and 2FA verification
+- second-order SQLi ideas, especially anything that might poison `emailUser` or change where the code was delivered
+- session confusion, like validating one user then swapping to another
+- brute-forcing the admin mailbox and other obvious credential guesses
 
-None of those landed. The important clue was the format of the codes themselves: they looked exactly like values generated with:
+None of it worked.
+
+That was the turning point. I had real credentials for the boss account, but the web app would not give me the second factor no matter how I poked at it. So I stopped asking "how do I bypass this page?" and started asking "how is this code generated?"
+
+The first clue was the stack. The app looked like Express, which strongly suggested Node.js on the backend. Once I was thinking in Node terms, the next thought was obvious: if they used weak randomness for the 2FA code, then that randomness probably comes from V8.
+
+The second clue was the shape of the codes themselves. They looked exactly like:
 
 ```javascript
 Math.floor(Math.random() * 100000000)
 ```
 
-## Step 3: The real bug was V8 `Math.random()`
+That was the moment the challenge stopped looking like a pure web exploit and started looking like a runtime / PRNG problem.
+
+## Step 3: Why Express led me to V8 `Math.random()`
+
+Express meant Node, and Node meant V8. If the developer had used the lazy option for code generation, there was a good chance the 2FA values came from `Math.random()` rather than a cryptographic API like `crypto.randomInt()`.
+
+Once I started treating the 2FA code as a PRNG output instead of a web token, the rest of the path made sense:
+
+- I could generate more codes for my own account with `/bank/resend`
+- those codes gave me observations from the same backend RNG
+- if the implementation was really V8 `Math.random()`, then I could try recovering the generator state and predicting the next output for `Vladizlow`
 
 Node's `Math.random()` is powered by V8's xorshift128+ generator. For performance, V8 fills a 64-value cache and serves the numbers in LIFO order, which means the observed outputs have to be reversed before feeding them into a forward solver.
 
@@ -154,13 +180,16 @@ MCTF{v8_1s_n0t_SEcur3_4t_4l7}
 
 1. Use SQLi on `/bank/login` to dump the `users` table.
 2. Recover `Vladizlow`'s password and the fact that his codes are routed to the `admin` mailbox.
-3. Log in as `katarina` and collect consecutive 2FA codes from one bank session.
-4. Recover the V8 xorshift128+ state from those observed codes.
-5. Predict the next valid boss 2FA code.
-6. Log in as `Vladizlow`, submit the predicted code, and read the flag from `/bank/profile`.
+3. Try the normal web-app routes first: BAC, response manipulation, IDOR ideas, race conditions, second-order SQLi, and admin brute-force.
+4. Conclude that the app layer is not giving a practical bypass.
+5. Notice the backend is Express, infer Node/V8, and pivot to the RNG behind the 2FA codes.
+6. Log in as `katarina` and collect consecutive 2FA codes from one bank session.
+7. Recover the V8 xorshift128+ state from those observed codes.
+8. Predict the next valid boss 2FA code.
+9. Log in as `Vladizlow`, submit the predicted code, and read the flag from `/bank/profile`.
 
 ## Takeaways
 
 - `Math.random()` should never be used for authentication or 2FA.
 - Output caching details matter just as much as the PRNG itself when you are modeling a real implementation.
-- SQL injection was only the first half of the challenge; the decisive step was turning leaked credentials into a predictable 2FA bypass.
+- SQLi only got me to the interesting part. The actual solve came from recognizing that the web app was not budging and shifting the attack to the runtime's randomness instead.
