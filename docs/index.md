@@ -56,14 +56,6 @@ Jump straight to the writeups from each event.
 
     [Read writeup](midnightctf/mineslayer.md)
 
--   **Mineslayer — Flag 2**
-
-    ---
-
-    Category: Web / Misc / Pwn
-
-    [Read writeup](midnightctf/mineslayer-flag2.md)
-
 </div>
 
 ### ASIS CTF
